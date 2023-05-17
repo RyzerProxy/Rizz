@@ -1,16 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
     <head>
+        <script __uv-script="1">
+            window.__uv$cookies = atob("MVBfSkFSPTIwMjMtMDUtMTctMjM=");
+            window.__uv$referrer = atob("");
+        </script>
+        <script src="/uv/uv.bundle.js" __uv-script="1"></script>
+        <script src="/uv/uv.config.js" __uv-script="1"></script>
+        <script src="/uv/uv.handler.js" __uv-script="1"></script>
         <meta charset="UTF-8">
         <meta content="dark" name="color-scheme">
         <meta content="origin" name="referrer">
         <meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image">
-        <link href="/manifest?pwa=webhp" crossorigin="use-credentials" rel="manifest">
+        <link href="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Foalideqt%3Dpua%3Fwgbjp" __uv-attr-crossorigin="use-credentials" rel="manifest" __uv-attr-href="/manifest?pwa=webhp">
         <title>Google</title>
-        <script nonce="ujbxpq0_uWtmjKLYgD9i0w">
+        <script __uv-attr-nonce="3edzqBw5hKPjY6DCoFBHBg">
             (function() {
                 window.google = {
-                    kEI: 'fFplZNi7AYCE0PEPlO-B0AU',
+                    kEI: 'fmVlZJm8JrDH0PEPyu--sA8',
                     kEXPI: '31',
                     kBL: 'fcnx',
                     kOPI: 89978449
@@ -36,7 +43,7 @@
                     return b
                 }
                 function r(a) {
-                    /^http:/i.test(a) && "https:" === window.location.protocol && (google.ml && google.ml(Error("a"), !1, {
+                    /^http:/i.test(a) && "https:" === window.__uv$setSource(__uv).__uv$location.protocol && (google.ml && google.ml(Error("a"), !1, {
                         src: a,
                         glmm: 1
                     }),
@@ -57,7 +64,7 @@
                     for (c = 0; c < f.length; c++) {
                         if (0 === c || 0 < c)
                             d += "&";
-                        d += f[c][0] + "=" + f[c][1]
+                        d += f[__uv.$wrap((c))][__uv.$wrap((0))] + "=" + f[__uv.$wrap((c))][__uv.$wrap((1))]
                     }
                     return "/" + (k || "gen_204") + "?atyp=i&ct=" + String(a) + "&cad=" + (b + e + d)
                 }
@@ -74,9 +81,9 @@
                     if (c = r(c)) {
                         a = new Image;
                         var g = n.length;
-                        n[g] = a;
+                        n[__uv.$wrap((g))] = a;
                         a.onerror = a.onload = a.onabort = function() {
-                            delete n[g]
+                            delete n[__uv.$wrap((g))]
                         }
                         ;
                         a.src = c
@@ -99,9 +106,9 @@
                     else {
                         do
                             c = Math.random();
-                        while (google.y[c])
+                        while (google.y[__uv.$wrap((c))])
                     }
-                    google.y[c] = [a, b];
+                    google.y[__uv.$wrap((c))] = [a, b];
                     return !1
                 }
                 ;
@@ -211,7 +218,7 @@
                 }
                 ;google.timers = {};
                 google.startTick = function(a) {
-                    google.timers[a] = {
+                    google.timers[__uv.$wrap((a))] = {
                         t: {
                             start: Date.now()
                         },
@@ -221,41 +228,41 @@
                 }
                 ;
                 google.tick = function(a, b, d) {
-                    google.timers[a] || google.startTick(a);
+                    google.timers[__uv.$wrap((a))] || google.startTick(a);
                     d = void 0 !== d ? d : Date.now();
                     b instanceof Array || (b = [b]);
-                    for (var c = 0, e; e = b[c++]; )
-                        google.timers[a].t[e] = d
+                    for (var c = 0, e; e = b[__uv.$wrap((c++))]; )
+                        google.timers[__uv.$wrap((a))].t[__uv.$wrap((e))] = d
                 }
                 ;
                 google.c.e = function(a, b, d) {
-                    google.timers[a].e[b] = d
+                    google.timers[__uv.$wrap((a))].e[__uv.$wrap((b))] = d
                 }
                 ;
                 google.c.b = function(a, b) {
-                    b = google.timers[b || "load"].m;
-                    b[a] && google.ml(Error("a"), !1, {
+                    b = google.timers[__uv.$wrap((b || "load"))].m;
+                    b[__uv.$wrap((a))] && google.ml(Error("a"), !1, {
                         m: a
                     });
-                    b[a] = !0
+                    b[__uv.$wrap((a))] = !0
                 }
                 ;
                 google.c.u = function(a, b) {
-                    var d = google.timers[b || "load"]
+                    var d = google.timers[__uv.$wrap((b || "load"))]
                       , c = d.m;
-                    if (c[a]) {
-                        c[a] = !1;
+                    if (c[__uv.$wrap((a))]) {
+                        c[__uv.$wrap((a))] = !1;
                         for (a in c)
-                            if (c[a])
+                            if (c[__uv.$wrap((a))])
                                 return;
                         google.csiReport(d, "load2" === b ? "all2" : "all")
                     } else {
                         b = "";
                         for (var e in c)
-                            b += e + ":" + c[e] + ";";
+                            b += e + ":" + c[__uv.$wrap((e))] + ";";
                         google.ml(Error("b"), !1, {
                             m: a,
-                            b: !1 === c[a],
+                            b: !1 === c[__uv.$wrap((a))],
                             s: b
                         })
                     }
@@ -364,7 +371,7 @@
                         return !1;
                     a = b(a);
                     b = b(c);
-                    return a.bottom < b.top || a.top >= b.bottom || a.right < b.left || a.left >= b.right
+                    return a.bottom < b.__uv$setSource(__uv).__uv$top || a.__uv$setSource(__uv).__uv$top >= b.bottom || a.right < b.left || a.left >= b.right
                 }
                 function t(a) {
                     return "none" === a.style.display ? !0 : document.defaultView && document.defaultView.getComputedStyle ? (a = document.defaultView.getComputedStyle(a),
@@ -373,7 +380,7 @@
                 function aa(a, b) {
                     var c = b(a);
                     a = c.left + window.pageXOffset;
-                    b = c.top + window.pageYOffset;
+                    b = c.__uv$setSource(__uv).__uv$top + window.pageYOffset;
                     var d = c.width;
                     c = c.height;
                     var e = 0;
@@ -387,13 +394,13 @@
                     b + c > f && (e |= 4));
                     return e
                 }
-                ;var ba = window.location
+                ;var ba = window.__uv$setSource(__uv).__uv$location
                   , ca = "aft afti aftr afts cbs cbt fht frt frts frvt hct prt sct".split(" ");
                 function v(a) {
-                    return (a = ba.search.match(new RegExp("[?&]" + a + "=(\\d+)"))) ? Number(a[1]) : -1
+                    return (a = ba.search.match(new RegExp("[?&]" + a + "=(\\d+)"))) ? Number(a[__uv.$wrap((1))]) : -1
                 }
                 function w(a, b) {
-                    var c = google.timers[b || "load"];
+                    var c = google.timers[__uv.$wrap((b || "load"))];
                     b = c.m;
                     if (!b || !b.prs) {
                         var d = m() ? 0 : v("qsubts");
@@ -405,19 +412,19 @@
                             wsrt: c.wsrt || 0
                         };
                         if (f)
-                            for (var q = 0, n; n = ca[q++]; ) {
-                                var k = e[n];
-                                k && (b[n] = Math.max(k - f, 0))
+                            for (var q = 0, n; n = ca[__uv.$wrap((q++))]; ) {
+                                var k = e[__uv.$wrap((n))];
+                                k && (b[__uv.$wrap((n))] = Math.max(k - f, 0))
                             }
                         0 < d && (b.gsasrt = c.t.start - d);
                         d = c.e;
                         c = "/gen_204?s=" + google.sn + "&t=" + a + "&atyp=csi&ei=" + google.kEI + "&rt=";
                         e = "";
                         for (var p in b)
-                            c += "" + e + p + "." + b[p],
+                            c += "" + e + p + "." + b[__uv.$wrap((p))],
                             e = ",";
                         for (var l in d)
-                            c += "&" + l + "=" + d[l];
+                            c += "&" + l + "=" + d[__uv.$wrap((l))];
                         p = c;
                         l = "";
                         c = [];
@@ -427,7 +434,7 @@
                         for (d = 0; d < c.length; d++) {
                             if (0 === d || 0 < d)
                                 l += "&";
-                            l += c[d][0] + "=" + c[d][1]
+                            l += c[__uv.$wrap((d))][__uv.$wrap((0))] + "=" + c[__uv.$wrap((d))][__uv.$wrap((1))]
                         }
                         c = p + l;
                         2 === m() && (c += "&bb=1");
@@ -448,7 +455,7 @@
                 ;var y = "src bsrc url ll image img-url".split(" ");
                 function da(a) {
                     for (var b = 0; b < y.length; ++b)
-                        if (a.getAttribute("data-" + y[b]))
+                        if (a.getAttribute("data-" + y[__uv.$wrap((b))]))
                             return !0;
                     return !1
                 }
@@ -466,7 +473,7 @@
                 var z = window.performance;
                 var A = window.innerHeight || document.documentElement.clientHeight, B = 0, C = 0, D = 0, E = 0, F = 0, G = 0, H = 0, I = 0, J = 0, K = 0, L = !0, M = !0, N = -1, O, P = google.c.sxs ? "load2" : "load";
                 function Q(a, b, c, d) {
-                    var e = google.timers[P].t[a];
+                    var e = google.timers[__uv.$wrap((P))].t[__uv.$wrap((a))];
                     e && (c || d && null != b && b < e) || google.tick(P, a, b)
                 }
                 function R(a, b, c) {
@@ -519,7 +526,7 @@
                         if (!google.c.sxs && null !== google.aftq && (2 === google.fevent || 3 === google.fevent ? google.fevent : 1) & ((a ? 1 : 0) | (c || b ? 2 : 0))) {
                             google.tick("load", "aftqf", Date.now());
                             var f;
-                            for (a = 0; b = null == (f = google.aftq) ? void 0 : f[a++]; )
+                            for (a = 0; b = null == (f = google.aftq) ? void 0 : f[__uv.$wrap((a++))]; )
                                 h(b);
                             google.aftq = null
                         }
@@ -580,7 +587,7 @@
                         var p = d & 4
                           , l = google.c.btfi && p && f && N < A;
                         if (l) {
-                            var V = a.getBoundingClientRect().top + window.pageYOffset;
+                            var V = a.getBoundingClientRect().__uv$setSource(__uv).__uv$top + window.pageYOffset;
                             !c || 0 > c || V < c ? N = k ? A : V : l = !1
                         }
                         k && (++H,
@@ -688,7 +695,7 @@
                   , G = function(a) {
                     for (var c = 0; c < a.h.length; ++c) {
                         var d = a.g
-                          , b = a.h[c];
+                          , b = a.h[__uv.$wrap((c))];
                         d.removeEventListener ? d.removeEventListener(b.eventType, b.o, b.capture) : d.detachEvent && d.detachEvent("on" + b.eventType, b.o)
                     }
                     a.h = []
@@ -730,7 +737,7 @@
                     if (this.l)
                         return J.i();
                     if (this.g != this.j.length) {
-                        var a = this.j[this.g];
+                        var a = this.j[__uv.$wrap((this.g))];
                         this.g++;
                         a != this.h && a && a.__owner && (this.l = !0,
                         K(a.__owner, this.h));
@@ -780,20 +787,20 @@
                                 n = null;
                                 "getAttribute"in r && (n = r.getAttribute("jsaction"));
                                 if (x = n) {
-                                    n = f[x];
+                                    n = f[__uv.$wrap((x))];
                                     if (!n) {
                                         n = {};
                                         for (var A = x.split(ca), da = A ? A.length : 0, B = 0; B < da; B++) {
-                                            var v = A[B];
+                                            var v = A[__uv.$wrap((B))];
                                             if (v) {
                                                 var C = v.indexOf(":")
                                                   , O = -1 != C
                                                   , fa = O ? R(v.substr(0, C)) : ea;
                                                 v = O ? R(v.substr(C + 1)) : v;
-                                                n[fa] = v
+                                                n[__uv.$wrap((fa))] = v
                                             }
                                         }
-                                        f[x] = n
+                                        f[__uv.$wrap((x))] = n
                                     }
                                     r.__jsaction = n
                                 } else
@@ -804,7 +811,7 @@
                             q = "click") : "clickkey" == q ? q = "click" : "click" != q || n.click || (q = "clickonly");
                             p = H._cfc && n.click ? H._cfc(r, ba, n, q, p) : {
                                 eventType: p ? p : q,
-                                action: n[q] || "",
+                                action: n[__uv.$wrap((q))] || "",
                                 event: null,
                                 ignore: !1
                             };
@@ -822,7 +829,7 @@
                                 else {
                                     k = {};
                                     for (var t in b)
-                                        "function" !== typeof b[t] && "srcElement" !== t && "target" !== t && (k[t] = b[t]);
+                                        "function" !== typeof b[__uv.$wrap((t))] && "srcElement" !== t && "target" !== t && (k[__uv.$wrap((t))] = b[__uv.$wrap((t))]);
                                     k.type = "mouseover" == b.type ? "mouseenter" : "mouseout" == b.type ? "mouseleave" : "pointerover" == b.type ? "pointerenter" : "pointerleave";
                                     k.target = k.srcElement = h;
                                     k.bubbles = !1;
@@ -894,24 +901,24 @@
                     if (!a.l.hasOwnProperty(c)) {
                         var d = ia(a, c)
                           , b = ja(c, d);
-                        a.l[c] = d;
+                        a.l[__uv.$wrap((c))] = d;
                         a.s.push(b);
                         for (d = 0; d < a.g.length; ++d) {
-                            var g = a.g[d];
+                            var g = a.g[__uv.$wrap((d))];
                             g.h.push(b.call(null, g.g))
                         }
                         "click" == c && P(a, "keydown")
                     }
                 };
                 Q.prototype.o = function(a) {
-                    return this.l[a]
+                    return this.l[__uv.$wrap((a))]
                 }
                 ;
                 var W = function(a, c) {
                     var d = new F(c);
                     a: {
                         for (var b = 0; b < a.g.length; b++)
-                            if (T(a.g[b].g, c)) {
+                            if (T(a.g[__uv.$wrap((b))].g, c)) {
                                 c = !0;
                                 break a
                             }
@@ -927,12 +934,12 @@
                 }
                   , V = function(a) {
                     for (var c = a.h.concat(a.g), d = [], b = [], g = 0; g < a.g.length; ++g) {
-                        var m = a.g[g];
+                        var m = a.g[__uv.$wrap((g))];
                         X(m, c) ? (d.push(m),
                         G(m)) : b.push(m)
                     }
                     for (g = 0; g < a.h.length; ++g)
-                        m = a.h[g],
+                        m = a.h[__uv.$wrap((g))],
                         X(m, c) ? d.push(m) : (b.push(m),
                         U(a, m));
                     a.g = b;
@@ -942,7 +949,7 @@
                     var d = c.g;
                     ka && (d.style.cursor = "pointer");
                     for (d = 0; d < a.s.length; ++d)
-                        c.h.push(a.s[d].call(null, c.g))
+                        c.h.push(a.s[__uv.$wrap((d))].call(null, c.g))
                 }
                   , Y = function(a, c) {
                     a.i = c;
@@ -951,7 +958,7 @@
                 }
                   , X = function(a, c) {
                     for (var d = 0; d < c.length; ++d)
-                        if (c[d].g != a.g && T(c[d].g, a.g))
+                        if (c[__uv.$wrap((d))].g != a.g && T(c[__uv.$wrap((d))].g, a.g))
                             return !0;
                     return !1
                 }
@@ -1016,14 +1023,14 @@
                     google.jsarc = function(c) {
                         G(c);
                         for (var d = !1, b = 0; b < a.g.length; ++b)
-                            if (a.g[b] === c) {
+                            if (a.g[__uv.$wrap((b))] === c) {
                                 a.g.splice(b, 1);
                                 d = !0;
                                 break
                             }
                         if (!d)
                             for (d = 0; d < a.h.length; ++d)
-                                if (a.h[d] === c) {
+                                if (a.h[__uv.$wrap((d))] === c) {
                                     a.h.splice(d, 1);
                                     break
                                 }
@@ -1048,21 +1055,21 @@
             }
             ).call(this);
         </script>
-        <script nonce="ujbxpq0_uWtmjKLYgD9i0w">
+        <script __uv-attr-nonce="3edzqBw5hKPjY6DCoFBHBg">
             (function() {
                 google.xjs = {
-                    ck: 'xjs.s.IaLlYW1z0WI.L.W.O',
-                    cs: 'ACT90oHO0HuGnz8zNNzQYr_tDPiEtBQuPA',
-                    csss: 'ACT90oHY4xp7MgCPyMnAtrNteALG15z12w',
+                    ck: 'xjs.s.Inv-9cgVRns.L.W.O',
+                    cs: 'ACT90oHvYM__sIb_qnfSZiXqrodnHeo_Mw',
+                    csss: 'ACT90oF3BIdvKF_Bx6AlIwXu5WhlCB_G_g',
                     excm: [],
                     sepcss: false
                 };
             }
             )();
         </script>
-        <script nonce="ujbxpq0_uWtmjKLYgD9i0w">
+        <script __uv-attr-nonce="3edzqBw5hKPjY6DCoFBHBg">
             (function() {
-                google.kEXPI = '0,3700281,668,363778,16311,35513,45391,46544,41461,68911,79687,3193,40682,144810,24670,29382,773,26742,19822,67344,2248,21579,85995,3862,28413,9603,6984,4256,9726,7280,2321,649,490,774,381,286,2958,2557,1876,1089,3652,77,1365,584,6450,1439,670,616,666,450,2711,7024,141,1053,2148,1374,198,192,5344,1649,600,824,4374,5213120,5995303,2833303,696,196,29429850,275869,23499641,180,3874,1274,132,167,431,393,639,78,152,3316,104,384,611,483,934,1207,1601,140,969,719,1181,143,3928,223,1362,118,189,336,1131';
+                google.kEXPI = '0,3700281,668,363778,16311,35513,45391,46544,41461,68911,79687,3193,40682,144810,24670,29382,773,26742,19822,67344,2248,21579,85995,3862,28413,9603,6984,4256,9726,7280,2321,649,490,774,381,286,2958,2557,1876,1089,3652,77,1365,584,6450,1439,670,616,666,450,2711,7024,141,1053,2148,1374,198,5536,1649,600,824,4374,5213120,1044,5994259,2833303,696,196,29429850,275869,23499641,180,3874,1274,132,167,431,393,639,78,152,3316,104,384,611,483,934,1207,1601,140,842,127,719,1181,143,3928,223,1362,118,147,42,336,862,269';
             }
             )();
             window._ = window._ || {};
@@ -1076,13 +1083,13 @@
             _qs._DumpException = _._DumpException;
             function _F_installCss(c) {}
             (function() {
-                window.google.xjsu = '/xjs/_/js/k\x3dxjs.s.en_US.m0CRLSlZlCQ.O/am\x3dAAAABABEn3DKaKM4QAAgAACAIQEAAAAAACAAJgCCR5lAAAAAIAJGEAMEAJISAAAAAAChHyIAAQAAAAMAAAAoAbRjCFQBBAAAAED-ABjwAgCDCQsAAAAAAAAAAAiwBMHgBgkUBIAAAAAAAAAAAECVTF4cEAI/d\x3d1/ed\x3d1/dg\x3d2/br\x3d1/rs\x3dACT90oExrOyFGJ_CmPKl6YKavGmllU2rrw/m\x3dcdos,dpf,hsm,jsa,d,csi';
-                window._F_jsUrl = '/xjs/_/js/k\x3dxjs.s.en_US.m0CRLSlZlCQ.O/am\x3dAAAABABEn3DKaKM4QAAgAACAIQEAAAAAACAAJgCCR5lAAAAAIAJGEAMEAJISAAAAAAChHyIAAQAAAAMAAAAoAbRjCFQBBAAAAED-ABjwAgCDCQsAAAAAAAAAAAiwBMHgBgkUBIAAAAAAAAAAAECVTF4cEAI/d\x3d1/ed\x3d1/dg\x3d2/br\x3d1/rs\x3dACT90oExrOyFGJ_CmPKl6YKavGmllU2rrw/m\x3dcdos,dpf,hsm,jsa,d,csi';
+                window.google.xjsu = '/xjs/_/js/k\x3dxjs.s.en_US.MRjZ7dlBmSE.O/am\x3dAAAABABEn3DKaKM4QABAAAAAQwIAAAAAAEAATAAEjzKBAAAAQASMIAYIACQlAAAAAABCP0QAAgAAAAYAAABQBNCuIVAFEAAAAAD5A2DACwAMJiwAAAAAAAAAACDAEgSDGyRQEAACAAAAAAAAAABVMnlxQAg/d\x3d1/ed\x3d1/dg\x3d2/br\x3d1/rs\x3dACT90oEgVlojdCmrgDZ_AdR6g5_MVSAzcQ/m\x3dcdos,dpf,hsm,jsa,d,csi';
+                window._F_jsUrl = '/xjs/_/js/k\x3dxjs.s.en_US.MRjZ7dlBmSE.O/am\x3dAAAABABEn3DKaKM4QABAAAAAQwIAAAAAAEAATAAEjzKBAAAAQASMIAYIACQlAAAAAABCP0QAAgAAAAYAAABQBNCuIVAFEAAAAAD5A2DACwAMJiwAAAAAAAAAACDAEgSDGyRQEAACAAAAAAAAAABVMnlxQAg/d\x3d1/ed\x3d1/dg\x3d2/br\x3d1/rs\x3dACT90oEgVlojdCmrgDZ_AdR6g5_MVSAzcQ/m\x3dcdos,dpf,hsm,jsa,d,csi';
             }
             )();
         </script>
-        <script defer="" src="/xjs/_/js/k=xjs.s.en_US.m0CRLSlZlCQ.O/am=AAAABABEn3DKaKM4QAAgAACAIQEAAAAAACAAJgCCR5lAAAAAIAJGEAMEAJISAAAAAAChHyIAAQAAAAMAAAAoAbRjCFQBBAAAAED-ABjwAgCDCQsAAAAAAAAAAAiwBMHgBgkUBIAAAAAAAAAAAECVTF4cEAI/d=1/ed=1/dg=2/br=1/rs=ACT90oExrOyFGJ_CmPKl6YKavGmllU2rrw/m=cdos,dpf,hsm,jsa,d,csi" nonce="ujbxpq0_uWtmjKLYgD9i0w"></script>
-        <script nonce="ujbxpq0_uWtmjKLYgD9i0w">
+        <script defer="" src="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fzjq%2F%5D%2Fhs-k%3Fxhs%2Cs%2Cel_WS%2CMPjX7fl%40mQE%2CO-ao%3DCACA%40A%40El3FKcKO4SA%40ACACASwKACACACECAVACEhzIBCACASAQMKA%5BICCSlCACACA%40CR0SACgCACA%5BACA%40Q%40NAuKVCFGACACAF5C2FAAwCMHiuACACACACACCFAGgQDEyPQGACCCACACACACA%40VOnnxSAe%2Ff%3D3%2Fgd%3F1-de%3D0%2F%60r%3F1-rq%3DCCV92oGgTlmjfCoreDX_CdP6e5%5DMTSCzaQ-m%3Fcfoq%2Cfpd%2Cjso%2Chsc%2Cf%2Cask" __uv-attr-nonce="3edzqBw5hKPjY6DCoFBHBg" __uv-attr-src="/xjs/_/js/k=xjs.s.en_US.MRjZ7dlBmSE.O/am=AAAABABEn3DKaKM4QABAAAAAQwIAAAAAAEAATAAEjzKBAAAAQASMIAYIACQlAAAAAABCP0QAAgAAAAYAAABQBNCuIVAFEAAAAAD5A2DACwAMJiwAAAAAAAAAACDAEgSDGyRQEAACAAAAAAAAAABVMnlxQAg/d=1/ed=1/dg=2/br=1/rs=ACT90oEgVlojdCmrgDZ_AdR6g5_MVSAzcQ/m=cdos,dpf,hsm,jsa,d,csi"></script>
+        <script __uv-attr-nonce="3edzqBw5hKPjY6DCoFBHBg">
             (function() {
                 window._skwEvts = [];
             }
@@ -1127,14 +1134,14 @@
                     var g = a.fileName;
                     g && (0 < g.indexOf("-extension:/") && (e = 3),
                     c += "&script=" + b(g),
-                    f && g === window.location.href && (f = document.documentElement.outerHTML.split("\n")[f],
+                    f && g === window.__uv$setSource(__uv).__uv$location.href && (f = document.documentElement.outerHTML.split("\n")[__uv.$wrap((f))],
                     c += "&cad=" + b(f ? f.substring(0, 300) : "No script found.")));
                     c += "&jsel=" + e;
                     for (var u in d)
                         c += "&",
                         c += b(u),
                         c += "=",
-                        c += b(d[u]);
+                        c += b(d[__uv.$wrap((u))]);
                     c = c + "&emsg=" + b(a.name + ": " + a.message);
                     c = c + "&jsst=" + b(a.stack || "N/A");
                     12288 <= c.length && (c = c.substr(0, 12288));
@@ -1155,7 +1162,7 @@
             }
             )();
             ;this.gbar_ = {
-                CONFIG: [[[0, "www.gstatic.com", "og.qtm.en_US.W-89OXWW37Q.2019.O", "com", "en", "538", 0, [4, 2, "", "", "", "532710495", "0"], null, "fFplZKa6AomO0PEPnsyRqAM", null, 0, "og.qtm.64frOaEuYNk.L.W.O", "AA2YrTv6vp7JTA69x6O6B3q1MLRwtPb_5A", "AA2YrTsJ_QcZpcp5CW3daReDcEDTaz-plg", "", 2, 1, 200, "USA", null, null, "1", "538", 1], null, [1, 0.1000000014901161, 2, 1], [1, 0.001000000047497451, 1], [0, 0, 0, null, "", "", "", "", 0, 0, 0], [0, 0, "", 1, 0, 0, 0, 0, 0, 0, null, 0, 0, null, 0, 0, null, null, 0, 0, 0, "", "", "", "", "", "", null, 0, 0, 0, 0, 0, null, null, null, "rgba(32,33,36,1)", "rgba(255,255,255,1)", 0, 0, 1, null, null, 1, 0, 0], null, null, ["1", "gci_91f30755d6a6b787dcc2a4062e6e9824.js", "googleapis.client:gapi.iframes", "", "en"], null, null, null, null, ["m;/_/scs/abc-static/_/js/k=gapi.gapi.en.UjJbvPIecP0.O/d=1/rs=AHpOoo_flbzE3yQmWQ7n7N3yCQZtJt8-oA/m=__features__", "https://apis.google.com", "", "", "", "", null, 1, "es_plusone_gc_20230403.0_p0", "en", null, 0], [0.009999999776482582, "com", "538", [["19035560", "19035200", "7", 1, 5, 2592000, "", "AN2NJM5PFPlm56BDz8_Sb0jg1SR_4S15Xg:1684363900050", 0, 1, 2, "https://www.google.com/_/og/promos/", 0], "n", "", ["", "", ""], 1, 2592000, null, null, "https://www.google.com/url?q=https://accounts.google.com/signin/v2/identifier%3Fec%3Dfutura_hpp_co_si_003_p%26continue%3Dhttps%253A%252F%252Fwww.google.com%252F%253Fptid%253D19034272%2526ptt%253D8%2526fpts%253D-1\u0026source=hpp\u0026id=19035560\u0026ct=7\u0026usg=AOvVaw2RDl3bD3I6pvA_g63FRWs8", null, null, null, null, null, 1, null, 0, 0, 1, 0, 0, 0, null, null, 0, 0, null, 0, 0, 0, 0, 0], null, null, null, 0, null, null, ["5061451", "google\\.(com|ru|ca|by|kz|com\\.mx|com\\.tr)$", 1]], [1, 1, null, 40400, 538, "USA", "en", "532710495.0", 8, 0.009999999776482582, 0, 0, null, null, null, null, "3700949", null, null, null, "fFplZKa6AomO0PEPnsyRqAM", 1, 0, 0, null, 2, 5, "pw", 25, 0, 0, 0, 0, 1], [[null, null, null, "https://www.gstatic.com/og/_/js/k=og.qtm.en_US.W-89OXWW37Q.2019.O/rt=j/m=qabr,q_d,qcwid,qapid,qald/exm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/rs=AA2YrTv6vp7JTA69x6O6B3q1MLRwtPb_5A"], [null, null, null, "https://www.gstatic.com/og/_/ss/k=og.qtm.64frOaEuYNk.L.W.O/m=qcwid/excm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/ct=zgms/rs=AA2YrTsJ_QcZpcp5CW3daReDcEDTaz-plg"]], null, null, null, [[[null, null, [null, null, null, "https://ogs.google.com/widget/callout?prid=19035560\u0026pgid=19035200\u0026puid=35e3dcbcfe0d586e\u0026cce=1\u0026dc=1"], 0, 280, 420, 70, 25, 0, null, 0, null, null, 8000, null, 71, 3, null, [19035560, 19035200, "", 1, 5, "AN2NJM5PFPlm56BDz8_Sb0jg1SR_4S15Xg:1684363900050", "", 0, 2592000, "35e3dcbcfe0d586e", 0, 2, 0, "https://www.google.com/url?q=https://accounts.google.com/signin/v2/identifier%3Fec%3Dfutura_hpp_co_si_003_p%26continue%3Dhttps%253A%252F%252Fwww.google.com%252F%253Fptid%253D19034272%2526ptt%253D8%2526fpts%253D-1\u0026source=hpp\u0026id=19035560\u0026ct=7\u0026usg=AOvVaw2RDl3bD3I6pvA_g63FRWs8", "https://www.google.com/_/og/promos/", 0, 0, 0, 0, 0, 0], 0, null, null, null, 0, null, 76, null, null, null, 107, 108, 109, "", null, null, null, 0], [null, null, [null, null, null, "https://ogs.google.com/widget/app/so"], 0, 448, 328, 57, 4, 1, 0, 0, 63, 64, 8000, "https://www.google.com/intl/en/about/products", 67, 1, 69, null, 1, 70, "Can't seem to load the app launcher right now. Try again or go to the %1$sGoogle Products%2$s page.", 3, 0, 0, 74, 0, null, null, null, null, null, null, null, "/widget/app/so", null, null, null, null, null, null, null, 0]], null, null, "1", "538", 1, 0, null, "en", 1, null, 0, 0, 0, null, 0]]],
+                CONFIG: [[[0, "www.gstatic.com", "og.qtm.en_US.W-89OXWW37Q.2019.O", "com", "en", "538", 0, [4, 2, "", "", "", "532710495", "0"], null, "fmVlZJjaJ6LG9AOpgo7ABQ", null, 0, "og.qtm.64frOaEuYNk.L.W.O", "AA2YrTv6vp7JTA69x6O6B3q1MLRwtPb_5A", "AA2YrTsJ_QcZpcp5CW3daReDcEDTaz-plg", "", 2, 1, 200, "USA", null, null, "1", "538", 1], null, [1, 0.1000000014901161, 2, 1], [1, 0.001000000047497451, 1], [0, 0, 0, null, "", "", "", "", 0, 0, 0], [0, 0, "", 1, 0, 0, 0, 0, 0, 0, null, 0, 0, null, 0, 0, null, null, 0, 0, 0, "", "", "", "", "", "", null, 0, 0, 0, 0, 0, null, null, null, "rgba(32,33,36,1)", "rgba(255,255,255,1)", 0, 0, 1, null, null, 1, 0, 0], null, null, ["1", "gci_91f30755d6a6b787dcc2a4062e6e9824.js", "googleapis.client:gapi.iframes", "", "en"], null, null, null, null, ["m;/_/scs/abc-static/_/js/k=gapi.gapi.en.UjJbvPIecP0.O/d=1/rs=AHpOoo_flbzE3yQmWQ7n7N3yCQZtJt8-oA/m=__features__", "https://apis.google.com", "", "", "", "", null, 1, "es_plusone_gc_20230403.0_p0", "en", null, 0], [0.009999999776482582, "com", "538", [["19035560", "19035200", "7", 1, 5, 2592000, "", "AN2NJM7tk75XX8bD6iYzGdjD1-GgBA4IIA:1684366718653", 0, 1, 2, "https://www.google.com/_/og/promos/", 0], "n", "", ["", "", ""], 1, 2592000, null, null, "https://www.google.com/url?q=https://accounts.google.com/signin/v2/identifier%3Fec%3Dfutura_hpp_co_si_003_p%26continue%3Dhttps%253A%252F%252Fwww.google.com%252F%253Fptid%253D19034272%2526ptt%253D8%2526fpts%253D-1\u0026source=hpp\u0026id=19035560\u0026ct=7\u0026usg=AOvVaw2RDl3bD3I6pvA_g63FRWs8", null, null, null, null, null, 1, null, 0, 0, 1, 0, 0, 0, null, null, 0, 0, null, 0, 0, 0, 0, 0], null, null, null, 0, null, null, ["5061451", "google\\.(com|ru|ca|by|kz|com\\.mx|com\\.tr)$", 1]], [1, 1, null, 40400, 538, "USA", "en", "532710495.0", 8, 0.009999999776482582, 0, 0, null, null, null, null, "3700949", null, null, null, "fmVlZJjaJ6LG9AOpgo7ABQ", 1, 0, 0, null, 2, 5, "pw", 21, 0, 0, 0, 0, 1], [[null, null, null, "https://www.gstatic.com/og/_/js/k=og.qtm.en_US.W-89OXWW37Q.2019.O/rt=j/m=qabr,q_d,qcwid,qapid,qald/exm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/rs=AA2YrTv6vp7JTA69x6O6B3q1MLRwtPb_5A"], [null, null, null, "https://www.gstatic.com/og/_/ss/k=og.qtm.64frOaEuYNk.L.W.O/m=qcwid/excm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/ct=zgms/rs=AA2YrTsJ_QcZpcp5CW3daReDcEDTaz-plg"]], null, null, null, [[[null, null, [null, null, null, "https://ogs.google.com/widget/callout?prid=19035560\u0026pgid=19035200\u0026puid=35e3dcbcfe0d586e\u0026cce=1\u0026dc=1"], 0, 280, 420, 70, 25, 0, null, 0, null, null, 8000, null, 71, 3, null, [19035560, 19035200, "", 1, 5, "AN2NJM7tk75XX8bD6iYzGdjD1-GgBA4IIA:1684366718653", "", 0, 2592000, "35e3dcbcfe0d586e", 0, 2, 0, "https://www.google.com/url?q=https://accounts.google.com/signin/v2/identifier%3Fec%3Dfutura_hpp_co_si_003_p%26continue%3Dhttps%253A%252F%252Fwww.google.com%252F%253Fptid%253D19034272%2526ptt%253D8%2526fpts%253D-1\u0026source=hpp\u0026id=19035560\u0026ct=7\u0026usg=AOvVaw2RDl3bD3I6pvA_g63FRWs8", "https://www.google.com/_/og/promos/", 0, 0, 0, 0, 0, 0], 0, null, null, null, 0, null, 76, null, null, null, 107, 108, 109, "", null, null, null, 0], [null, null, [null, null, null, "https://ogs.google.com/widget/app/so"], 0, 448, 328, 57, 4, 1, 0, 0, 63, 64, 8000, "https://www.google.com/intl/en/about/products", 67, 1, 69, null, 1, 70, "Can't seem to load the app launcher right now. Try again or go to the %1$sGoogle Products%2$s page.", 3, 0, 0, 74, 0, null, null, null, null, null, null, null, "/widget/app/so", null, null, null, null, null, null, null, 0]], null, null, "1", "538", 1, 0, null, "en", 1, null, 0, 0, 0, null, 0]]],
             };
             this.gbar_ = this.gbar_ || {};
             (function(_) {
@@ -1256,7 +1263,7 @@
                         if (0 < b) {
                             const c = Array(b);
                             for (let d = 0; d < b; d++)
-                                c[d] = a[d];
+                                c[__uv.$wrap((d))] = a[__uv.$wrap((d))];
                             return c
                         }
                         return []
@@ -1282,7 +1289,7 @@
                     ;
                     _.Ca = function(a, b) {
                         if (_.Ba)
-                            return a[_.Ba] |= b;
+                            return a[__uv.$wrap((_.Ba))] |= b;
                         if (void 0 !== a.Bb)
                             return a.Bb |= b;
                         Object.defineProperties(a, {
@@ -1305,12 +1312,12 @@
                     ;
                     _.Da = function(a) {
                         let b;
-                        _.Ba ? b = a[_.Ba] : b = a.Bb;
+                        _.Ba ? b = a[__uv.$wrap((_.Ba))] : b = a.Bb;
                         return null == b ? 0 : b
                     }
                     ;
                     _.Ea = function(a, b) {
-                        _.Ba ? a[_.Ba] = b : void 0 !== a.Bb ? a.Bb = b : Object.defineProperties(a, {
+                        _.Ba ? a[__uv.$wrap((_.Ba))] = b : void 0 !== a.Bb ? a.Bb = b : Object.defineProperties(a, {
                             Bb: {
                                 value: b,
                                 configurable: !0,
@@ -1400,11 +1407,11 @@
                           , f = a.Hb
                           , g = f ? d - 1 : d;
                         for (let h = 0; h < g; h++)
-                            e[h] = b(c[h]);
+                            e[__uv.$wrap((h))] = b(c[__uv.$wrap((h))]);
                         if (f) {
-                            c = e[d - 1] = {};
+                            c = e[__uv.$wrap((d - 1))] = {};
                             for (const h in f)
-                                c[h] = b(f[h])
+                                c[__uv.$wrap((h))] = b(f[__uv.$wrap((h))])
                         }
                         b = _.Qa(a.constructor, e);
                         a.hd && (b.hd = a.hd.slice());
@@ -1418,7 +1425,7 @@
                             else if (Ka(a)) {
                                 const g = {};
                                 for (let h in a)
-                                    g[h] = Wa(a[h], b, c, d, e, f);
+                                    g[__uv.$wrap((h))] = Wa(a[__uv.$wrap((h))], b, c, d, e, f);
                                 a = g
                             } else
                                 a = b(a, d);
@@ -1431,7 +1438,7 @@
                         d = d ? !!(g & 16) : void 0;
                         a = Array.prototype.slice.call(a);
                         for (let h = 0; h < a.length; h++)
-                            a[h] = Wa(a[h], b, c, d, e, f);
+                            a[__uv.$wrap((h))] = Wa(a[__uv.$wrap((h))], b, c, d, e, f);
                         c && c(g, a);
                         return a
                     }
@@ -1484,10 +1491,10 @@
                             if (!c) {
                                 b = Array.prototype.slice.call(b);
                                 var f;
-                                if (b.length && Ka(f = b[b.length - 1]))
+                                if (b.length && Ka(f = b[__uv.$wrap((b.length - 1))]))
                                     for (var g = 0; g < d.length; g++)
-                                        if (d[g] >= e) {
-                                            Object.assign(b[b.length - 1] = {}, f);
+                                        if (d[__uv.$wrap((g))] >= e) {
+                                            Object.assign(b[__uv.$wrap((b.length - 1))] = {}, f);
                                             break
                                         }
                             }
@@ -1496,18 +1503,18 @@
                             f = a.i;
                             let n;
                             for (g = 0; g < d.length; g++) {
-                                var h = d[g];
+                                var h = d[__uv.$wrap((g))];
                                 if (h < f) {
                                     h += a.j;
-                                    var k = e[h];
-                                    null == k ? e[h] = c ? _.ab : _.Ga([]) : c && k !== _.ab && _.Fa(k)
+                                    var k = e[__uv.$wrap((h))];
+                                    null == k ? e[__uv.$wrap((h))] = c ? _.ab : _.Ga([]) : c && k !== _.ab && _.Fa(k)
                                 } else {
                                     if (!n) {
                                         let q;
-                                        e.length && Ka(q = e[e.length - 1]) ? n = q : e.push(n = {})
+                                        e.length && Ka(q = e[__uv.$wrap((e.length - 1))]) ? n = q : e.push(n = {})
                                     }
-                                    k = n[h];
-                                    null == n[h] ? n[h] = c ? _.ab : _.Ga([]) : c && k !== _.ab && _.Fa(k)
+                                    k = n[__uv.$wrap((h))];
+                                    null == n[__uv.$wrap((h))] ? n[__uv.$wrap((h))] = c ? _.ab : _.Ga([]) : c && k !== _.ab && _.Fa(k)
                                 }
                             }
                         }
@@ -1531,12 +1538,12 @@
                     _.eb = function(a, b) {
                         let c, d;
                         for (let e = 1; e < arguments.length; e++) {
-                            d = arguments[e];
+                            d = arguments[__uv.$wrap((e))];
                             for (c in d)
-                                a[c] = d[c];
+                                a[__uv.$wrap((c))] = d[__uv.$wrap((c))];
                             for (let f = 0; f < db.length; f++)
-                                c = db[f],
-                                Object.prototype.hasOwnProperty.call(d, c) && (a[c] = d[c])
+                                c = db[__uv.$wrap((f))],
+                                Object.prototype.hasOwnProperty.call(d, c) && (a[__uv.$wrap((c))] = d[__uv.$wrap((c))])
                         }
                     }
                     ;
@@ -1547,7 +1554,7 @@
                         a = a.split(".");
                         b = b || _.m;
                         for (var c = 0; c < a.length; c++)
-                            if (b = b[a[c]],
+                            if (b = b[__uv.$wrap((a[__uv.$wrap((c))]))],
                             null == b)
                                 return null;
                         return b
@@ -1587,9 +1594,9 @@
                     _.y = function(a, b) {
                         a = a.split(".");
                         var c = _.m;
-                        a[0]in c || "undefined" == typeof c.execScript || c.execScript("var " + a[0]);
+                        a[__uv.$wrap((0))]in c || "undefined" == typeof c.execScript || c.execScript("var " + a[__uv.$wrap((0))]);
                         for (var d; a.length && (d = a.shift()); )
-                            a.length || void 0 === b ? c[d] && c[d] !== Object.prototype[d] ? c = c[d] : c = c[d] = {} : c[d] = b
+                            a.length || void 0 === b ? c[__uv.$wrap((d))] && c[__uv.$wrap((d))] !== Object.prototype[__uv.$wrap((d))] ? c = c[__uv.$wrap((d))] : c = c[__uv.$wrap((d))] = {} : c[__uv.$wrap((d))] = b
                     }
                     ;
                     _.z = function(a, b) {
@@ -1600,8 +1607,8 @@
                         a.prototype.constructor = a;
                         a.Yh = function(d, e, f) {
                             for (var g = Array(arguments.length - 2), h = 2; h < arguments.length; h++)
-                                g[h - 2] = arguments[h];
-                            return b.prototype[e].apply(d, g)
+                                g[__uv.$wrap((h - 2))] = arguments[__uv.$wrap((h))];
+                            return b.prototype[__uv.$wrap((e))].apply(d, g)
                         }
                     }
                     ;
@@ -1632,10 +1639,10 @@
                         return a.trim()
                     }
                     : function(a) {
-                        return /^[\s\xa0]*([\s\S]*?)[\s\xa0]*$/.exec(a)[1]
+                        return /^[\s\xa0]*([\s\S]*?)[\s\xa0]*$/.exec(a)[__uv.$wrap((1))]
                     }
                     ;
-                    var da, ob = _.gb("WIZ_global_data.oxN3nb"), pb = ob && ob[610401301];
+                    var da, ob = _.gb("WIZ_global_data.oxN3nb"), pb = ob && ob[__uv.$wrap((610401301))];
                     da = null != pb ? pb : !1;
                     var qb;
                     qb = _.m.navigator;
@@ -1649,11 +1656,11 @@
                     }
                     ;
                     _.tb = function(a) {
-                        _.tb[" "](a);
+                        _.tb[__uv.$wrap((" "))](a);
                         return a
                     }
                     ;
-                    _.tb[" "] = function() {}
+                    _.tb[__uv.$wrap((" "))] = function() {}
                     ;
                     var Gb, Hb, Mb;
                     _.ub = _.ia();
@@ -1689,7 +1696,7 @@
                             if (_.ub)
                                 return /(?:Version)[ \/]?(\S+)/.exec(a)
                         }();
-                        Jb && (Ib = Jb ? Jb[1] : "");
+                        Jb && (Ib = Jb ? Jb[__uv.$wrap((1))] : "");
                         if (_.A) {
                             var Kb = Gb();
                             if (null != Kb && Kb > parseFloat(Ib)) {
@@ -1719,8 +1726,8 @@
                     Ma = {};
                     _.ab = Object.freeze(_.Ea([], 23));
                     _.B = function(a, b, c) {
-                        return -1 === b ? null : b >= a.i ? a.Hb ? a.Hb[b] : void 0 : c && a.Hb && (c = a.Hb[b],
-                        null != c) ? c : a.ta[b + a.j]
+                        return -1 === b ? null : b >= a.i ? a.Hb ? a.Hb[__uv.$wrap((b))] : void 0 : c && a.Hb && (c = a.Hb[__uv.$wrap((b))],
+                        null != c) ? c : a.ta[__uv.$wrap((b + a.j))]
                     }
                     ;
                     _.D = function(a, b, c, d) {
@@ -1732,10 +1739,10 @@
                         a.s && (a.s = void 0);
                         if (b >= a.i || d)
                             return d = a.i + a.j,
-                            (a.Hb || (a.Hb = a.ta[d] = {}))[b] = c,
+                            (a.Hb || (a.Hb = a.ta[__uv.$wrap((d))] = {}))[__uv.$wrap((b))] = c,
                             a;
-                        a.ta[b + a.j] = c;
-                        (c = a.Hb) && b in c && delete c[b];
+                        a.ta[__uv.$wrap((b + a.j))] = c;
+                        (c = a.Hb) && b in c && delete c[__uv.$wrap((b))];
                         return a
                     }
                     ;
@@ -1814,7 +1821,7 @@
                             else {
                                 if (!Array.isArray(a))
                                     throw Error();
-                                if (c && c !== a[0])
+                                if (c && c !== a[__uv.$wrap((0))])
                                     throw Error();
                                 let d = _.Ca(a, 0) | 32;
                                 _.Ea(a, d)
@@ -1824,7 +1831,7 @@
                             a: {
                                 c = this.ta.length;
                                 a = c - 1;
-                                if (c && (c = this.ta[a],
+                                if (c && (c = this.ta[__uv.$wrap((a))],
                                 Ka(c))) {
                                     this.Hb = c;
                                     this.i = a - this.j;
@@ -1939,22 +1946,22 @@
                             var b = this.o;
                             a = a.split(".");
                             for (var c = a.length, d = 0; d < c; ++d)
-                                if (b[a[d]])
-                                    b = b[a[d]];
+                                if (b[__uv.$wrap((a[__uv.$wrap((d))]))])
+                                    b = b[__uv.$wrap((a[__uv.$wrap((d))]))];
                                 else
                                     return null;
                             return b instanceof Function ? b : null
                         }
                         Fc() {
                             for (var a = this.i.length, b = this.i, c = [], d = 0; d < a; ++d) {
-                                var e = b[d].i()
+                                var e = b[__uv.$wrap((d))].i()
                                   , f = this.resolve(e);
-                                if (f && f != this.j[e])
+                                if (f && f != this.j[__uv.$wrap((e))])
                                     try {
-                                        b[d].Fc(f)
+                                        b[__uv.$wrap((d))].Fc(f)
                                     } catch (g) {}
                                 else
-                                    c.push(b[d])
+                                    c.push(b[__uv.$wrap((d))])
                             }
                             this.i = c.concat(b.slice(a))
                         }
@@ -1970,7 +1977,7 @@
                             this.B = {};
                             this.j = !1;
                             a = window.navigator.userAgent;
-                            0 <= a.indexOf("MSIE") && 0 <= a.indexOf("Trident") && (a = /\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a)) && a[1] && 9 > parseFloat(a[1]) && (this.j = !0)
+                            0 <= a.indexOf("MSIE") && 0 <= a.indexOf("Trident") && (a = /\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a)) && a[__uv.$wrap((1))] && 9 > parseFloat(a[__uv.$wrap((1))]) && (this.j = !0)
                         }
                         A(a, b) {
                             this.i = b;
@@ -1986,7 +1993,7 @@
                         Ga(a) {
                             var b = [], c;
                             for (c in this.data)
-                                b.push(encodeURIComponent(c) + "=" + encodeURIComponent(String(this.data[c])));
+                                b.push(encodeURIComponent(c) + "=" + encodeURIComponent(String(this.data[__uv.$wrap((c))])));
                             return ("atyp=i&zx=" + (new Date).getTime() + "&" + b.join("&")).substr(0, a)
                         }
                     }
@@ -2020,7 +2027,7 @@
                             if (e) {
                                 e._sn && (e._sn = "og." + e._sn);
                                 for (const f in e)
-                                    this.data[encodeURIComponent(f)] = e[f]
+                                    this.data[__uv.$wrap((encodeURIComponent(f)))] = e[__uv.$wrap((f))]
                             }
                         }
                     }
@@ -2210,10 +2217,10 @@
                         var b = new Image
                           , c = bd;
                         b.onerror = b.onload = b.onabort = function() {
-                            c in cd && delete cd[c]
+                            c in cd && delete cd[__uv.$wrap((c))]
                         }
                         ;
-                        cd[bd++] = b;
+                        cd[__uv.$wrap((bd++))] = b;
                         b.src = _.xc(a)
                     }
                     ;
@@ -2237,20 +2244,20 @@
                     _.hd = function(a, b) {
                         var c = _.fd.i();
                         if (a in c.i) {
-                            if (c.i[a] != b)
+                            if (c.i[__uv.$wrap((a))] != b)
                                 throw new gd;
                         } else {
-                            c.i[a] = b;
-                            if (b = c.j[a])
+                            c.i[__uv.$wrap((a))] = b;
+                            if (b = c.j[__uv.$wrap((a))])
                                 for (let d = 0, e = b.length; d < e; d++)
-                                    b[d].i(c.i, a);
-                            delete c.j[a]
+                                    b[__uv.$wrap((d))].i(c.i, a);
+                            delete c.j[__uv.$wrap((a))]
                         }
                     }
                     ;
                     _.jd = function(a, b) {
                         if (b in a.i)
-                            return a.i[b];
+                            return a.i[__uv.$wrap((b))];
                         throw new id;
                     }
                     ;
@@ -2321,9 +2328,9 @@
                         if (!qd) {
                             qd = {};
                             for (var b = 0; b < pd.length; b++)
-                                qd[pd[b]] = !0
+                                qd[__uv.$wrap((pd[__uv.$wrap((b))]))] = !0
                         }
-                        return !!qd[a]
+                        return !!qd[__uv.$wrap((a))]
                     }
                       , sd = function(a) {
                         a = String(a);
@@ -2349,7 +2356,7 @@
                                     0 != a.length && a.push(","),
                                     a.push(sd(f)),
                                     a.push("."),
-                                    a.push(sd(e[f]));
+                                    a.push(sd(e[__uv.$wrap((f))]));
                                 e = a.join("");
                                 "" != e && (this.data.ogad = e)
                             }
@@ -2497,7 +2504,7 @@
                     }
                     ;
                     var Fd;
-                    window.gbar_ && window.gbar_.CONFIG ? Fd = window.gbar_.CONFIG[0] || {} : Fd = [];
+                    window.gbar_ && window.gbar_.CONFIG ? Fd = window.gbar_.CONFIG[__uv.$wrap((0))] || {} : Fd = [];
                     _.Cd = new Gd;
                     var md, nd, wd, xd, vd;
                     md = _.G(_.Cd, _.dd, 3) || new _.dd;
@@ -3976,18 +3983,18 @@
                         color-scheme: light
                     }
                 </style>
-                <a class="MV3Tnb" href="https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://about.google/%3Ffg%3D1%26utm_source%3Dgoogle-US%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&amp;ved=0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQkNQCCAI">About</a>
-                <a class="MV3Tnb" href="https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://store.google.com/US%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&amp;ved=0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQpMwCCAM">Store</a>
+                <a class="MV3Tnb" href="https://replit1.tbg95.co/education/hvtrs8%2F-a%60owt%2Cgmoelg%2F%3Dfe%3D3%26wto_qowrae%3Fgmoelg-WS%24uvm%5Dmgdkuo%3Dpedeprcl%24uvm%5Dccmrakgl%3Djp%2Fhgafep" ping="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fwrn%3Fqa%3Ft%24rat%3Fj%24smupcg%3Due%60hr%26wrn%3Djtvpq%3A-%2Fcbmuv.eomgne-%251Fdg'3F1'24uvm%5Dsmupcg%251Deomgne%2FUQ%2506wto_oefiwm'3Frgfgrpan%2506wto_aaopcien'3Fhr-jecdgr%24vgd%3F0chWKGwkZ%3A71_uv1-ChUwKzSIJcs3F_%5BQiNSCAAK" __uv-attr-href="https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header" __uv-attr-ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://about.google/%3Ffg%3D1%26utm_source%3Dgoogle-US%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&amp;ved=0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQkNQCCAI">About</a>
+                <a class="MV3Tnb" href="https://replit1.tbg95.co/education/hvtrs8%2F-svope%2Cgmoelg.aoo%2FWS%3Duvm%5Dsmupcg%3Djp%5Dhgafep%26wto_oefiwm%3Fgmoelg_mom%26wto_aaopcien%3FGQ120240%26jl%3Fel-WS" ping="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fwrn%3Fqa%3Ft%24rat%3Fj%24smupcg%3Due%60hr%26wrn%3Djtvpq%3A-%2Fqtmrg.eomgne%2Ccmm-UQ%251Fwto_qowrae'3Fhr_jecdgr'24uvm%5Dmgdkuo%251Deomgne%5Domo'24uvm%5Dccmrakgl%251DES302062'24hn%251Dgn%2FUQ%26tef%3D2ajUIEuiX853%5Dwt3%2FAjWuIxQKHaq1D%5DYSpOwACCM" __uv-attr-href="https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US" __uv-attr-ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://store.google.com/US%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&amp;ved=0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQpMwCCAM">Store</a>
                 <div class="LX3sZb">
-                    <div class="gb_Ia gb_d gb_ab gb_h gb_Lc gb_nd" id="gb" style="background-color:rgba(32,33,36,1)">
+                    <div class="gb_Ia gb_d gb_ab gb_h gb_Lc gb_nd" id="gb" style="background-color:rgba(32,33,36,1)" __uv-attr-style="background-color:rgba(32,33,36,1)">
                         <div class="gb_Ad gb_8a gb_pd" data-ogsr-up="">
                             <div>
                                 <div class="gb_Id gb_v gb_2f gb_Sf" data-ogbl="">
                                     <div class="gb_u gb_v">
-                                        <a class="gb_t" aria-label="Gmail (opens a new tab)" data-pid="23" href="https://mail.google.com/mail/&amp;ogbl" target="_top">Gmail</a>
+                                        <a class="gb_t" aria-label="Gmail (opens a new tab)" data-pid="23" href="https://replit1.tbg95.co/education/hvtrs8%2F-mcin.eomgne%2Ccmm-mcin%2F%24oebn" target="_top" __uv-attr-href="https://mail.google.com/mail/&amp;ogbl">Gmail</a>
                                     </div>
                                     <div class="gb_u gb_v">
-                                        <a class="gb_t" aria-label="Search for Images (opens a new tab)" data-pid="2" href="https://www.google.com/imghp?hl=en&amp;ogbl" target="_top">Images</a>
+                                        <a class="gb_t" aria-label="Search for Images (opens a new tab)" data-pid="2" href="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fkmehr%3Fjl%3Fel%26mg%60l" target="_top" __uv-attr-href="https://www.google.com/imghp?hl=en&amp;ogbl">Images</a>
                                     </div>
                                 </div>
                             </div>
@@ -3995,15 +4002,15 @@
                                 <div class="gb_3c">
                                     <div class="gb_Q gb_Qd gb_v gb_Xd" data-ogsr-fb="true" data-ogsr-alt="" id="gbwa">
                                         <div class="gb_e">
-                                            <a class="gb_f" aria-label="Google apps" href="https://www.google.com/intl/en/about/products" aria-expanded="false" role="button" tabindex="0">
-                                                <svg class="gb_g" focusable="false" viewbox="0 0 24 24">
+                                            <a class="gb_f" aria-label="Google apps" href="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fknvl-el%2Fcbmuv%2Frrmdwcvs" aria-expanded="false" role="button" tabindex="0" __uv-attr-href="https://www.google.com/intl/en/about/products">
+                                                <svg class="gb_g" focusable="false" viewBox="0 0 24 24">
                                                     <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
                                                 </svg>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <a class="gb_ma gb_id gb_Md gb_h gb_1d" href="https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.com/%3Fgws_rd%3Dssl&amp;ec=GAZAmgQ" target="_top">
+                                <a class="gb_ma gb_id gb_Md gb_h gb_1d" href="https://replit1.tbg95.co/education/hvtrs8%2F-aacmultq.eomgne%2Ccmm-SgrtiaeNoeil%3Fjl%3Fel%26raqskvg%3Dvrwe%24cmnvilug%3Djtvpq%3A-%2Fuwu.eomgne%2Ccmm-%251Fewq_pd'3Fsql%24ea%3DEAXAogS" target="_top" __uv-attr-href="https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.com/%3Fgws_rd%3Dssl&amp;ec=GAZAmgQ">
                                     <span class="gb_Kd">Sign in</span>
                                 </a>
                             </div>
@@ -4039,7 +4046,7 @@
                             width: auto
                         }
                     </style>
-                    <img class="lnXdpd" alt="Google" height="92" src="https://space8.vercel.app/images/logo.png" srcset="https://space8.vercel.app/images/logo.png" width="272">
+                    <img class="lnXdpd" alt="Google" height="92" src="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fkmcggs-bpaldkne%2Feomgnenoeo-2z%2Feomgnenoeo%5Dlkgjt%5Dcmlmr%5D252z90dr.rne" srcset="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fkmcggs-bpaldkne%2Feomgnenoeo-1z%2Feomgnenoeo%5Dlkgjt%5Dcmlmr%5D252z90dr.rne 1x, https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fkmcggs-bpaldkne%2Feomgnenoeo-2z%2Feomgnenoeo%5Dlkgjt%5Dcmlmr%5D252z90dr.rne 2x" width="272" __uv-attr-src="/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png" __uv-attr-srcset="/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png 2x">
                 </div>
             </div>
             <div class="o3j99 ikrT4e om7nvf">
@@ -4049,14 +4056,14 @@
                     }
                 </style>
                 <dialog class="spch-dlg" id="spch-dlg">
-                    <div class="spch" style="display:none" id="spch"></div>
+                    <div class="spch" style="display:none" id="spch" __uv-attr-style="display:none"></div>
                 </dialog>
-                <form action="/search" autocomplete="off" method="GET" role="search">
-                    <div jsmodel="sj77Re P9Kqfe" jsdata="MuIEvd;_;CT0pQE">
+                <form action="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fqecrah" autocomplete="off" method="GET" role="search" __uv-attr-action="/search">
+                    <div jsmodel="sj77Re P9Kqfe" jsdata="MuIEvd;_;Buj/3k">
                         <div jscontroller="cnjECf" jsmodel="VYkzu a4L2gc QwwFZb BFDhle gx0hCb TnHSdd icv1ie " class="A8SBwf" data-adhe="false" data-alt="false" data-hp="true" data-mlcf="false" data-mle="true" data-mof="false" jsdata="LVplcb;_;" jsaction="lX6RWd:w3Wsmc;ocDSvd:duwfG;DR74Fd:KyvVPe;DkpM0b:d3sQLd;IQOavd:dFyQEf;XzZZPe:jI3wzf;Aghsf:AVsnlb;iHd9U:Q7Cnrc;f5hEHe:G0jgYd;vmxUb:j3bJnb;nTzfpf:YPRawb;R2c5O:LuRugf;qiCkJd:ANdidc;htNNz:SNIJTd;NOg9L:HLgh3;uGoIkd:epUokb;zLdLw:eaGBS;H9muVd:J4e6lb;hBEIVb:nUZ9le;rcuQ6b:npT2md">
                             <style>
                                 .A8SBwf,.IormK {
-                                    width: 640px;
+                                    width: 640px
                                 }
 
                                 .A8SBwf {
@@ -4064,7 +4071,7 @@
                                     padding-top: 6px;
                                     width: auto;
                                     max-width: 584px;
-                                    position: relative;
+                                    position: relative
                                 }
 
                                 .RNNXgb {
@@ -4078,7 +4085,7 @@
                                     margin: 0 auto;
                                     width: 638px;
                                     width: auto;
-                                    max-width: 584px;
+                                    max-width: 584px
                                 }
 
                                 .minidiv .RNNXgb {
@@ -4086,13 +4093,13 @@
                                     border-radius: 16px;
                                     background: #303134;
                                     margin: 10px 0 0;
-                                    border: 1px solid #5f6368;
+                                    border: 1px solid #5f6368
                                 }
 
                                 .emcav .RNNXgb {
                                     border-bottom-left-radius: 0;
                                     border-bottom-right-radius: 0;
-                                    box-shadow: 0 1px 6px 0 #171717;
+                                    box-shadow: 0 1px 6px 0#171717;
                                     background: #303134;
                                     border-color: rgba(223,225,229,0)
                                 }
@@ -4100,7 +4107,7 @@
                                 .minidiv .emcav .RNNXgb {
                                     border-color: transparent;
                                     border-bottom-left-radius: 0;
-                                    border-bottom-right-radius: 0;
+                                    border-bottom-right-radius: 0
                                 }
 
                                 .emcav.emcat .RNNXgb {
@@ -4115,19 +4122,19 @@
 
                                 .RNNXgb:hover,.sbfc .RNNXgb {
                                     background-color: #303134;
-                                    box-shadow: 0 1px 6px 0 #171717;
+                                    box-shadow: 0 1px 6px 0#171717;
                                     border-color: rgba(223,225,229,0)
                                 }
 
                                 .minidiv .RNNXgb:hover {
                                     border-color: transparent;
-                                    box-shadow: 0 1px 6px 0 #171717
+                                    box-shadow: 0 1px 6px 0#171717
                                 }
 
                                 .SDkEP {
                                     flex: 1;
                                     display: flex;
-                                    padding: 5px 8px 0 14px;
+                                    padding: 5px 8px 0 14px
                                 }
 
                                 .minidiv .SDkEP {
@@ -4181,7 +4188,7 @@
                                             }
                                         </style>
                                         <div class="CcAdNb">
-                                            <span class="QCzoEc z1asCe MZy1Rb" style="height:20px;line-height:20px;width:20px">
+                                            <span class="QCzoEc z1asCe MZy1Rb" style="height:20px;line-height:20px;width:20px" __uv-attr-style="height:20px;line-height:20px;width:20px">
                                                 <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                     <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
                                                 </svg>
@@ -4193,7 +4200,7 @@
                                             .gLFyf,.YacQv {
                                                 line-height: 34px;
                                                 font-size: 16px;
-                                                flex: 100%;
+                                                flex: 100%
                                             }
 
                                             textarea.gLFyf,.YacQv {
@@ -4221,7 +4228,7 @@
                                                 word-wrap: break-word;
                                                 outline: none;
                                                 display: flex;
-                                                -webkit-tap-highlight-color: transparent;
+                                                -webkit-tap-highlight-color: transparent
                                             }
 
                                             .a4bIc {
@@ -4239,11 +4246,11 @@
                                             }
 
                                             .YacQv span {
-                                                text-decoration: #f28b82 dotted underline;
+                                                text-decoration: #f28b82 dotted underline
                                             }
                                         </style>
                                         <div class="YacQv" jsname="vdLsw"></div>
-                                        <textarea class="gLFyf" jsaction="paste:puy29d;" id="APjFqb" maxlength="2048" name="q" rows="1" aria-activedescendant="" aria-autocomplete="both" aria-controls="Alh6id" aria-expanded="false" aria-haspopup="both" aria-owns="Alh6id" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Search" type="search" value="" aria-label="Search" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQ39UDCAY"></textarea>
+                                        <textarea class="gLFyf" jsaction="paste:puy29d;" id="APjFqb" maxlength="2048" name="q" rows="1" aria-activedescendant="" aria-autocomplete="both" aria-controls="Alh6id" aria-expanded="false" aria-haspopup="both" aria-owns="Alh6id" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Search" type="search" value="" aria-label="Search" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQ39UDCAY"></textarea>
                                     </div>
                                     <div class="dRYYxd">
                                         <style>
@@ -4322,7 +4329,7 @@
                                             }
                                         </style>
                                         <div jscontroller="PymCCe" jsname="RP0xob" class="BKRPef">
-                                            <div class="vOY7J" tabindex="0" jsname="pkjasb" aria-label=" Clear" role="button" jsaction="AVsnlb;rcuQ6b:npT2md" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQ05YFCAc">
+                                            <div class="vOY7J" tabindex="0" jsname="pkjasb" aria-label=" Clear" role="button" jsaction="AVsnlb;rcuQ6b:npT2md" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQ05YFCAc">
                                                 <span class="ExCKkf z1asCe rzyADb" jsname="itVqKe">
                                                     <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                         <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
@@ -4360,8 +4367,8 @@
                                                 height: 20px
                                             }
                                         </style>
-                                        <div jscontroller="unV4T" jsname="F7uqIe" class="XDyW0e" aria-label="Search by voice" role="button" tabindex="0" jsaction="h5M12e;rcuQ6b:npT2md" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQvs8DCAg">
-                                            <svg class="goxjub" focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <div jscontroller="unV4T" jsname="F7uqIe" class="XDyW0e" aria-label="Search by voice" role="button" tabindex="0" jsaction="h5M12e;rcuQ6b:npT2md" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQvs8DCAg">
+                                            <svg class="goxjub" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path>
                                                 <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
                                                 <path fill="#fbbc04" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path>
@@ -4397,8 +4404,8 @@
                                                 height: 20px
                                             }
                                         </style>
-                                        <div jscontroller="lpsUAf" jsname="R5mgy" class="nDcEnd" data-base-lens-url="https://lens.google.com" data-checkerboard-transparent-images-background-enabled="false" data-convert-transparent-images="false" data-downscaling-enabled="true" data-downscaling-max-longest-edge-pixels="1000" data-encoding-compression-ratio="0.5" data-file-format-conversion-enabled="false" data-image-processor-enabled="true" data-is-images-mode="false" data-is-send-dimensions-in-body-enabled="false" data-preferred-mime-type="" data-propagated-experiment-ids="" data-transparent-image-background-color="#000" data-transparent-image-checkerboard-color="#fff" data-upload-path="/upload?" aria-label="Search by image" role="button" tabindex="0" jsaction="rcuQ6b:npT2md;h5M12e" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQhqEICAk">
-                                            <svg class="Gdd5U" focusable="false" viewbox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+                                        <div jscontroller="lpsUAf" jsname="R5mgy" class="nDcEnd" data-base-lens-url="https://lens.google.com" data-checkerboard-transparent-images-background-enabled="false" data-convert-transparent-images="false" data-downscaling-enabled="true" data-downscaling-max-longest-edge-pixels="1000" data-encoding-compression-ratio="0.5" data-file-format-conversion-enabled="false" data-image-processor-enabled="true" data-is-images-mode="false" data-is-send-dimensions-in-body-enabled="false" data-preferred-mime-type="" data-propagated-experiment-ids="" data-transparent-image-background-color="#000" data-transparent-image-checkerboard-color="#fff" data-upload-path="/upload?" aria-label="Search by image" role="button" tabindex="0" jsaction="rcuQ6b:npT2md;h5M12e" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQhqEICAk">
+                                            <svg class="Gdd5U" focusable="false" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
                                                 <rect fill="none" height="192" width="192"></rect>
                                                 <g>
                                                     <circle fill="#34a853" cx="144.07" cy="144" r="16"></circle>
@@ -4412,7 +4419,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div jscontroller="Dvn7fe" class="UUbT9" style="display:none" jsname="UUbT9" jsaction="mouseout:ItzDCd;mouseleave:MWfikb;hBEIVb:nUZ9le;YMFC3:VKssTb;vklu5c:k02QY;ldyIye:CmVOgc">
+                            <div jscontroller="Dvn7fe" class="UUbT9" style="display:none" jsname="UUbT9" jsaction="mouseout:ItzDCd;mouseleave:MWfikb;hBEIVb:nUZ9le;YMFC3:VKssTb;vklu5c:k02QY;ldyIye:CmVOgc" __uv-attr-style="display:none">
                                 <style>
                                     .UUbT9 {
                                         position: absolute;
@@ -4421,7 +4428,7 @@
                                         cursor: default;
                                         -webkit-user-select: none;
                                         width: 100%;
-                                        margin-top: -1px;
+                                        margin-top: -1px
                                     }
 
                                     .aajZCb {
@@ -4433,9 +4440,9 @@
                                         overflow: hidden;
                                         background: #303134;
                                         border-radius: 0 0 24px 24px;
-                                        box-shadow: 0 4px 6px 0 #171717;
+                                        box-shadow: 0 4px 6px 0#171717;
                                         border: 0;
-                                        padding-bottom: 4px;
+                                        padding-bottom: 4px
                                     }
 
                                     .minidiv .aajZCb {
@@ -4444,7 +4451,7 @@
                                     }
 
                                     .mkHrUc {
-                                        display: flex;
+                                        display: flex
                                     }
 
                                     .h3L8Ub .rLrQHf {
@@ -4465,7 +4472,7 @@
 
                                     .RjPuVb {
                                         height: 1px;
-                                        margin: 0 26px 0 0;
+                                        margin: 0 26px 0 0
                                     }
 
                                     .S3nFnd {
@@ -4499,7 +4506,7 @@
                                     }
 
                                     .sb7 {
-                                        background: url() no-repeat ;
+                                        background: url()no-repeat;
                                         background-size: ;
                                         min-height: 0px;
                                         min-width: 0px;
@@ -4508,7 +4515,7 @@
                                     }
 
                                     .sb27 {
-                                        background: url(/images/searchbox/desktop_searchbox_sprites318_hr.webp) no-repeat 0 -21px;
+                                        background: url(https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fkmcggs-sgapcjbmx-dgsitmp%5Dsgapcjbmx%5Dsrrktgs11%3A_jr%2Cwgbr)no-repeat 0-21px;
                                         background-size: 20px;
                                         min-height: 20px;
                                         min-width: 20px;
@@ -4517,7 +4524,7 @@
                                     }
 
                                     .sb43 {
-                                        background: url(/images/searchbox/desktop_searchbox_sprites318_hr.webp) no-repeat 0 0;
+                                        background: url(https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fkmcggs-sgapcjbmx-dgsitmp%5Dsgapcjbmx%5Dsrrktgs11%3A_jr%2Cwgbr)no-repeat 0 0;
                                         background-size: 20px;
                                         min-height: 20px;
                                         min-width: 20px;
@@ -4531,10 +4538,10 @@
                                     }
 
                                     .sb33 {
-                                        background: url(/images/searchbox/desktop_searchbox_sprites318_hr.webp) no-repeat 0 -42px;
+                                        background: url(https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fkmcggs-sgapcjbmx-dgsitmp%5Dsgapcjbmx%5Dsrrktgs11%3A_jr%2Cwgbr)no-repeat 0-42px;
                                         background-size: 20px;
                                         height: 20px;
-                                        width: 20px;
+                                        width: 20px
                                     }
                                 </style>
                                 <div class="RjPuVb" jsname="RjPuVb"></div>
@@ -4614,7 +4621,7 @@
                                         .sbic {
                                             display: flex;
                                             align-items: center;
-                                            margin: 0 13px 0 1px;
+                                            margin: 0 13px 0 1px
                                         }
 
                                         .sbic.vYOkbe {
@@ -4622,7 +4629,7 @@
                                             border-radius: 4px;
                                             min-height: 32px;
                                             min-width: 32px;
-                                            margin: 4px 7px 4px -5px;
+                                            margin: 4px 7px 4px -5px
                                         }
 
                                         .sbre .wM6W7d {
@@ -4661,7 +4668,7 @@
 
                                         .AQZ9Vd {
                                             display: flex;
-                                            align-self: stretch;
+                                            align-self: stretch
                                         }
 
                                         .sbhl {
@@ -4979,13 +4986,13 @@
                                     <li data-view-type="1" class="sbct" id="YMXe" role="presentation">
                                         <div class="eIPGRd">
                                             <div class="sbic">
-                                                <div class="R0xNaf" style="display:none">
+                                                <div class="R0xNaf" style="display:none" __uv-attr-style="display:none">
                                                     <div>
-                                                        <img class="czSn1c BrZ2se" alt="" style="display:none">
+                                                        <img class="czSn1c BrZ2se" alt="" style="display:none" __uv-attr-style="display:none">
                                                     </div>
                                                     <div class="d2mOW">
-                                                        <img class="czSn1c cCO7Gf" alt="" style="display:none">
-                                                        <img class="czSn1c cCO7Gf" alt="" style="display:none">
+                                                        <img class="czSn1c cCO7Gf" alt="" style="display:none" __uv-attr-style="display:none">
+                                                        <img class="czSn1c cCO7Gf" alt="" style="display:none" __uv-attr-style="display:none">
                                                     </div>
                                                 </div>
                                             </div>
@@ -5029,7 +5036,7 @@
                                                         background-color: #303134
                                                     }
                                                 </style>
-                                                <div class="Sz7Lee MagqMc U48fD" style="display:none" aria-label="See more" role="button" tabindex="0">
+                                                <div class="Sz7Lee MagqMc U48fD" style="display:none" aria-label="See more" role="button" tabindex="0" __uv-attr-style="display:none">
                                                     <style>
                                                         .U48fD {
                                                             -webkit-tap-highlight-color: transparent;
@@ -5058,7 +5065,7 @@
 
                                                         .jRKCUd::before {
                                                             bottom: 12px;
-                                                            content: '';
+                                                            content: "";
                                                             left: 16px;
                                                             position: absolute;
                                                             right: 16px;
@@ -5144,7 +5151,7 @@
                                                     <hr class="Bi9oQd" aria-hidden="true">
                                                     <div class="ZFiwCf">
                                                         <span class="LGwnxb">See more</span>
-                                                        <span class="w2fKdd z1asCe lYxQe" style="height:20px;line-height:20px;width:20px">
+                                                        <span class="w2fKdd z1asCe lYxQe" style="height:20px;line-height:20px;width:20px" __uv-attr-style="height:20px;line-height:20px;width:20px">
                                                             <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                                 <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
                                                             </svg>
@@ -5292,7 +5299,7 @@
                                         </div>
                                     </li>
                                     <div class="xAmryf" id="bgeLZd">
-                                        <svg class="eL7oAc" height="18px" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="eL7oAc" height="18px" viewBox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M0 0h24v24H0V0z" fill="none"></path>
                                             <path d="M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z"></path>
                                         </svg>
@@ -5338,8 +5345,8 @@
                                             }
                                         </style>
                                         <center>
-                                            <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQ4dUDCAs">
-                                            <input class="RNmpXc" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit" jsaction="trigger.kWlxhc" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQ19QECAw">
+                                            <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQ4dUDCAs">
+                                            <input class="RNmpXc" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit" jsaction="trigger.kWlxhc" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQ19QECAw">
                                         </center>
                                     </div>
                                 </div>
@@ -5348,7 +5355,7 @@
                                         font-size: 8pt;
                                         margin-top: -16px;
                                         position: absolute;
-                                        right: 16px;
+                                        right: 16px
                                     }
                                 </style>
                                 <div jsname="JUypV" jscontroller="OqGDve" class="MG7lrf" data-async-context="async_id:duf3-46;authority:0;card_id:;entry_point:0;feature_id:;ftoe:0;header:0;is_jobs_spam_form:0;open:0;preselect_answer_index:-1;suggestions:;suggestions_subtypes:;suggestions_types:;surface:0;title:;type:46">
@@ -5362,7 +5369,7 @@
                                         }
 
                                         a.aciXEb {
-                                            padding: 0 5px;
+                                            padding: 0 5px
                                         }
 
                                         .RTZ84b {
@@ -5384,25 +5391,25 @@
                                             padding-bottom: 4px
                                         }
                                     </style>
-                                    <div jscontroller="EkevXb" style="display:none" jsaction="rcuQ6b:npT2md"></div>
-                                    <div id="duf3-46" data-jiis="up" data-async-type="duffy3" data-async-context-required="type,open,feature_id,async_id,entry_point,authority,card_id,ftoe,title,header,suggestions,surface,suggestions_types,suggestions_subtypes,preselect_answer_index,is_jobs_spam_form" class="yp" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQ-0EIDQ"></div>
-                                    <a class="oBa0Fe aciXEb" href="#" id="sbfblt" data-async-trigger="duf3-46" aria-label="Give feedback on this result" role="button" jsaction="trigger.szjOR" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQtw8IDg">Report inappropriate predictions</a>
+                                    <div jscontroller="EkevXb" style="display:none" jsaction="rcuQ6b:npT2md" __uv-attr-style="display:none"></div>
+                                    <div id="duf3-46" data-jiis="up" data-async-type="duffy3" data-async-context-required="type,open,feature_id,async_id,entry_point,authority,card_id,ftoe,title,header,suggestions,surface,suggestions_types,suggestions_subtypes,preselect_answer_index,is_jobs_spam_form" class="yp" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQ-0EIDQ"></div>
+                                    <a class="oBa0Fe aciXEb" href="#" id="sbfblt" data-async-trigger="duf3-46" aria-label="Give feedback on this result" role="button" jsaction="trigger.szjOR" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQtw8IDg" __uv-attr-href="#">Report inappropriate predictions</a>
                                 </div>
                             </div>
-                            <div jsname="mvaK7d" class="M8H8pb" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQ4d8ICA8"></div>
+                            <div jsname="mvaK7d" class="M8H8pb" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQ4d8ICA8"></div>
                             <div class="FPdoLc lJ9FBc">
                                 <center>
-                                    <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQ4dUDCBA">
-                                    <input id="gbqfbb" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" role="button" tabindex="0" type="submit" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQnRsIEQ">
+                                    <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQ4dUDCBA">
+                                    <input id="gbqfbb" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" role="button" tabindex="0" type="submit" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQnRsIEQ">
                                 </center>
                             </div>
                         </div>
-                        <div style="background:url(/images/searchbox/desktop_searchbox_sprites318_hr.webp)"></div>
+                        <div style="background:url(https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fkmcggs-sgapcjbmx-dgsitmp%5Dsgapcjbmx%5Dsrrktgs11%3A_jr%2Cwgbr)" __uv-attr-style="background:url(/images/searchbox/desktop_searchbox_sprites318_hr.webp)"></div>
                     </div>
                     <div id="tophf">
                         <input name="source" type="hidden" value="hp">
-                        <input value="fFplZNi7AYCE0PEPlO-B0AU" name="ei" type="hidden">
-                        <input value="AOEireoAAAAAZGVojCilzb4TfK07AffIRjsnU7yXnsAq" name="iflsig" type="hidden">
+                        <input value="fmVlZJm8JrDH0PEPyu--sA8" name="ei" type="hidden">
+                        <input value="AOEireoAAAAAZGVzjsn2-g3CbQiAyPEQRaJONMpqQIHc" name="iflsig" type="hidden">
                     </div>
                 </form>
             </div>
@@ -5430,9 +5437,9 @@
                             vertical-align: middle
                         }
                     </style>
-                    <div class="szppmdbYutt__middle-slot-promo" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQnIcBCBI">
+                    <div class="szppmdbYutt__middle-slot-promo" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQnIcBCBI">
                         <span>This Mental Health Awareness Month, </span>
-                        <a class="NKcBbd" href="https://www.google.com/url?q=https://blog.google/technology/health/mental-health-awareness-month-2023/%3Futm_source%3Dhpp%26utm_medium%3Dreferral%26utm_campaign%3Dmham2023&amp;source=hpp&amp;id=19035292&amp;ct=3&amp;usg=AOvVaw31dybyDlq9PGpKMQqic-My&amp;sa=X&amp;ved=0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQ8IcBCBM" rel="nofollow">find more supportive resources on Google</a>
+                        <a class="NKcBbd" href="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fwrn%3Fs%3Djtvpq%3A-%2F%60lmg%2Cgmoelg%2Fveahlonoey-hgantj%2Foeltcl%2Fhgantj-cwcrgngsq-ooltj-0003-%251Fwto_qowrae'3Fhrp'24uvm%5Dmgdkuo%251Dpedeprcl'24uvm%5Dccmrakgl%251Dohcm0003%24smupcg%3Djpr%26kd%3F1%3B015090%26at%3F3%24uqg%3FAMvTau33d%7Bb%7BDnq%3BPEpIMSqkc%2FM%7B%26qa%3FX%24vgd%3F0chWKGwkZ%3A71_uv1-ChUwKzSIJcs3F_%5BQ%3AIaBABO" rel="nofollow" __uv-attr-href="https://www.google.com/url?q=https://blog.google/technology/health/mental-health-awareness-month-2023/%3Futm_source%3Dhpp%26utm_medium%3Dreferral%26utm_campaign%3Dmham2023&amp;source=hpp&amp;id=19035292&amp;ct=3&amp;usg=AOvVaw31dybyDlq9PGpKMQqic-My&amp;sa=X&amp;ved=0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQ8IcBCBM">find more supportive resources on Google</a>
                     </div>
                 </div>
             </div>
@@ -5517,19 +5524,19 @@
                 </style>
                 <div jscontroller="NzU6V" class="KxwPGc SSwjIe" data-sfe="true" data-sfsw="1200" jsaction="rcuQ6b:npT2md">
                     <div class="KxwPGc AghGtd">
-                        <a class="pHiOh" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/intl/en_us/ads/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&amp;ved=0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQkdQCCBQ">Advertising</a>
-                        <a class="pHiOh" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/services/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&amp;ved=0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQktQCCBU">Business</a>
-                        <a class="pHiOh" href="https://google.com/search/howsearchworks/?fg=1">How Search works </a>
+                        <a class="pHiOh" href="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fknvl-el_ws-afs-%3Fqu%60if%3Duw%2Fwu-gt%2Fg%2Faua%2Fa%2Fg%5Dhradomt3_3!m2%24uvm%5Dsmupcg%3Deomgne%2Ccmm%24uvm%5Dmgdkuo%3Dpedeprcl%24uvm%5Dccmrakgl%3Deomgne%5Dhradomtgr%24fe%3D3" ping="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fwrn%3Fqa%3Ft%24rat%3Fj%24smupcg%3Due%60hr%26wrn%3Djtvpq%3A-%2Fuwu.eomgne%2Ccmm-iltn%2Fgn%5Duq%2Fcdq%2F'3Dswbkd'3Fwu-uw%2Fev-e-cwc-c-e_jpcfmov1%5D1%23o0%2506wto_qowrae'3Fgmoelg.aoo%2506wto_oefiwm'3Frgfgrpan%2506wto_aaopcien'3Fgmoelg_jpcfmovep%2506dg'3F1%24vgd%3F0chWKGwkZ%3A71_uv1-ChUwKzSIJcs3F_%5BQidSCABS" __uv-attr-href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1" __uv-attr-ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/intl/en_us/ads/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&amp;ved=0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQkdQCCBQ">Advertising</a>
+                        <a class="pHiOh" href="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fqepvkcgs-%3Fqu%60if%3Duw%2Fwu-gt%2Fg%2Faua%2Fa%2Fg%5Dhrbdomt3_3!m2%24uvm%5Dsmupcg%3Deomgne%2Ccmm%24uvm%5Dmgdkuo%3Dpedeprcl%24uvm%5Dccmrakgl%3Deomgne%5Dhrbdomtgr%24fe%3D3" ping="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fwrn%3Fqa%3Ft%24rat%3Fj%24smupcg%3Due%60hr%26wrn%3Djtvpq%3A-%2Fuwu.eomgne%2Ccmm-sgrtiaeq%2F'3Dswbkd'3Fwu-uw%2Fev-e-cwc-c-e_jp%60fmov1%5D1%23o0%2506wto_qowrae'3Fgmoelg.aoo%2506wto_oefiwm'3Frgfgrpan%2506wto_aaopcien'3Fgmoelg_jp%60fmovep%2506dg'3F1%24vgd%3F0chWKGwkZ%3A71_uv1-ChUwKzSIJcs3F_%5BQitSCABW" __uv-attr-href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1" __uv-attr-ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/services/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&amp;ved=0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQktQCCBU">Business</a>
+                        <a class="pHiOh" href="https://replit1.tbg95.co/education/hvtrs8%2F-gmoelg.aoo%2Fqecrah-hmwqecrahuopkq%2F%3Dfe%3D3" __uv-attr-href="https://google.com/search/howsearchworks/?fg=1">How Search works </a>
                     </div>
                     <div class="KxwPGc ssOUyb">
-                        <a class="pHiOh" href="https://sustainability.google/carbon-free/?utm_source=googlehpfooter&amp;utm_medium=housepromos&amp;utm_campaign=bottom-footer&amp;utm_content=" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://sustainability.google/carbon-free/%3Futm_source%3Dgooglehpfooter%26utm_medium%3Dhousepromos%26utm_campaign%3Dbottom-footer%26utm_content%3D&amp;ved=0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQiM8HCBY">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" class="Pb9hCb" alt="">
+                        <a class="pHiOh" href="https://replit1.tbg95.co/education/hvtrs8%2F-swsvakncbklkt%7B.eomgne-ccr%60ol-drge-%3Fwto_qowrae%3Fgmoelghrfmovep%26wto_oefiwm%3Fhmuqerrmmms%24uvm%5Dccmrakgl%3D%60ovtmm%2Ffmovep%26wto_aoltgnv%3D" ping="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fwrn%3Fqa%3Ft%24rat%3Fj%24smupcg%3Due%60hr%26wrn%3Djtvpq%3A-%2Fquqtcila%60inivy%2Cgmoelg%2Faapbmn%2Ffpeg%2F'3Duvm%5Dsmupcg%251Deomgnejpdomtgr'24uvm%5Dmgdkuo%251Djowsgppoooq%2506wto_aaopcien'3Fbmtvoo-domtgr'24uvm%5Dcmnvelt'3F%26tef%3D2ajUIEuiX853%5Dwt3%2FAjWuIxQKHaq1D%5DYSiO8JC%40Y" __uv-attr-href="https://sustainability.google/carbon-free/?utm_source=googlehpfooter&amp;utm_medium=housepromos&amp;utm_campaign=bottom-footer&amp;utm_content=" __uv-attr-ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://sustainability.google/carbon-free/%3Futm_source%3Dgooglehpfooter%26utm_medium%3Dhousepromos%26utm_campaign%3Dbottom-footer%26utm_content%3D&amp;ved=0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQiM8HCBY">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" class="Pb9hCb" alt="" __uv-attr-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC">
                             <span class="ktLKi">Carbon neutral since 2007</span>
                         </a>
                     </div>
                     <div class="KxwPGc iTjxkf">
-                        <a class="pHiOh" href="https://policies.google.com/privacy?hl=en&amp;fg=1" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://policies.google.com/privacy%3Fhl%3Den%26fg%3D1&amp;ved=0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQ8awCCBc">Privacy</a>
-                        <a class="pHiOh" href="https://policies.google.com/terms?hl=en&amp;fg=1" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://policies.google.com/terms%3Fhl%3Den%26fg%3D1&amp;ved=0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQ8qwCCBg">Terms</a>
+                        <a class="pHiOh" href="https://replit1.tbg95.co/education/hvtrs8%2F-pmlkckeq.eomgne%2Ccmm-ppitaay%3Dhn%3Dgn%24fe%3D3" ping="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fwrn%3Fqa%3Ft%24rat%3Fj%24smupcg%3Due%60hr%26wrn%3Djtvpq%3A-%2Froniaigs%2Cgmoelg.aoo%2Frrkvcc%7B%251Fjl'3Fel%2506dg'3F1%24vgd%3F0chWKGwkZ%3A71_uv1-ChUwKzSIJcs3F_%5BQ%3AauCABa" __uv-attr-href="https://policies.google.com/privacy?hl=en&amp;fg=1" __uv-attr-ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://policies.google.com/privacy%3Fhl%3Den%26fg%3D1&amp;ved=0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQ8awCCBc">Privacy</a>
+                        <a class="pHiOh" href="https://replit1.tbg95.co/education/hvtrs8%2F-pmlkckeq.eomgne%2Ccmm-tgros%3Dhn%3Dgn%24fe%3D3" ping="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fwrn%3Fqa%3Ft%24rat%3Fj%24smupcg%3Due%60hr%26wrn%3Djtvpq%3A-%2Froniaigs%2Cgmoelg.aoo%2Fvepmq%251Fjl'3Fel%2506dg'3F1%24vgd%3F0chWKGwkZ%3A71_uv1-ChUwKzSIJcs3F_%5BQ%3AquCABe" __uv-attr-href="https://policies.google.com/terms?hl=en&amp;fg=1" __uv-attr-ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://policies.google.com/terms%3Fhl%3Den%26fg%3D1&amp;ved=0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQ8qwCCBg">Terms</a>
                         <span>
                             <style>
                                 .ayzqOc:hover {
@@ -5561,7 +5568,7 @@
                                         color: inherit
                                     }
                                 </style>
-                                <g-popup jsname="V68bde" jscontroller="DPreE" jsaction="A05xBd:IYtByb;EOZ57e:WFrRFb;" jsdata="mVjAjf;_;CT0pQI">
+                                <g-popup jsname="V68bde" jscontroller="DPreE" jsaction="A05xBd:IYtByb;EOZ57e:WFrRFb;" jsdata="mVjAjf;_;Buj/3o">
                                     <style>
                                         .UjBGL {
                                             display: block
@@ -5591,15 +5598,15 @@
                                         }
                                     </style>
                                     <div jsname="oYxtQd" class="CcNe6e" aria-expanded="false" aria-haspopup="true" role="button" tabindex="0" jsaction="WFrRFb;keydown:uYT2Vb">
-                                        <div jsname="LgbsSe" class="ayzqOc pHiOh" aria-controls="_fFplZNi7AYCE0PEPlO-B0AU_1" aria-haspopup="true">Settings</div>
+                                        <div jsname="LgbsSe" class="ayzqOc pHiOh" aria-controls="_fmVlZJm8JrDH0PEPyu--sA8_1" aria-haspopup="true">Settings</div>
                                     </div>
-                                    <div jsname="V68bde" class="UjBGL pkWBse iRQHZe" style="display:none;z-index:200">
+                                    <div jsname="V68bde" class="UjBGL pkWBse iRQHZe" style="display:none;z-index:200" __uv-attr-style="display:none;z-index:200">
                                         <g-menu jsname="xl07Ob" class="cF4V5c yTik0 wplJBd PBn44e iQXTJe" jscontroller="WlNQGd" role="menu" tabindex="-1" jsaction="PSl28c;focus:h06R8;keydown:uYT2Vb;mouseenter:WOQqYb;mouseleave:Tx5Rb;mouseover:IgJl9c">
                                             <style>
                                                 .yTik0 {
                                                     border: none;
                                                     display: block;
-                                                    outline: none;
+                                                    outline: none
                                                 }
 
                                                 .wplJBd {
@@ -5619,7 +5626,7 @@
                                                     padding: 5px 0
                                                 }
                                             </style>
-                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;CT0pQM">
+                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;Buj/3s">
                                                 <style>
                                                     .EpPYLd {
                                                         display: block;
@@ -5672,53 +5679,53 @@
 
                                                     .Zt0a5e.CB8nDe {
                                                         background: no-repeat left 8px center;
-                                                        background-image: url(//ssl.gstatic.com/images/icons/material/system/1x/done_white_16dp.png);
+                                                        background-image: url(https://replit1.tbg95.co/education/hvtrs8%2F-sql%2Cgqtctkc%2Ccmm-ioaeeq%2Fkcmnq%2Foavepicl-s%7Bsveo%2F3x-dmng_uhktg_36fp%2Cplg)
                                                     }
 
                                                     .GZnQqe.CB8nDe {
                                                         background: no-repeat left center;
-                                                        background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark2-light.png);
+                                                        background-image: url(https://replit1.tbg95.co/education/hvtrs8%2F-sql%2Cgqtctkc%2Ccmm-uk%2Ft1-mgnw%2Fahgcimcri2%2Flkgjt%2Cplg)
                                                     }
 
                                                     .GZnQqe.LGiluc,.GZnQqe.EpPYLd[disabled] {
-                                                        color: #dadce0 !important
+                                                        color: #dadce0!important
                                                     }
 
                                                     .GZnQqe.LGiluc {
-                                                        border-top-color: #3c4043;
+                                                        border-top-color: #3c4043
                                                     }
                                                 </style>
                                                 <div jsname="ibnC6b" class="YpcDnf OSrXXb HG1dvd" role="none">
-                                                    <a href="https://www.google.com/preferences?hl=en&amp;fg=1" role="menuitem" tabindex="-1">Search settings</a>
+                                                    <a href="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Frrgfgrgnaeq%3Fjl%3Fel%26dg%3F1" role="menuitem" tabindex="-1" __uv-attr-href="https://www.google.com/preferences?hl=en&amp;fg=1">Search settings</a>
                                                 </div>
                                             </g-menu-item>
-                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;CT0pQM">
+                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;Buj/3s">
                                                 <div jsname="ibnC6b" class="YpcDnf OSrXXb HG1dvd" role="none">
-                                                    <a href="/advanced_search?hl=en&amp;fg=1" role="menuitem" tabindex="-1">Advanced search</a>
+                                                    <a href="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fcdtalcgd%5Dsgapcj%3Fjl%3Fel%26dg%3F1" role="menuitem" tabindex="-1" __uv-attr-href="/advanced_search?hl=en&amp;fg=1">Advanced search</a>
                                                 </div>
                                             </g-menu-item>
-                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;CT0pQM">
+                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;Buj/3s">
                                                 <div jsname="ibnC6b" class="YpcDnf OSrXXb HG1dvd" role="none">
-                                                    <a href="/history/privacyadvisor/search/unauth?utm_source=googlemenu&amp;fg=1&amp;cctld=com" role="menuitem" tabindex="-1">Your data in Search</a>
+                                                    <a href="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fjiqtmr%7B%2Frrkvcc%7Bafvksmr-sgapcj%2Fwncuvh%3Duvm%5Dsmupcg%3Deomgneoelu%24fe%3D3%26acvlf%3Daoo" role="menuitem" tabindex="-1" __uv-attr-href="/history/privacyadvisor/search/unauth?utm_source=googlemenu&amp;fg=1&amp;cctld=com">Your data in Search</a>
                                                 </div>
                                             </g-menu-item>
-                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;CT0pQM">
+                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;Buj/3s">
                                                 <div jsname="ibnC6b" class="YpcDnf OSrXXb HG1dvd" role="none">
-                                                    <a href="/history/optout?hl=en&amp;fg=1" role="menuitem" tabindex="-1">Search history</a>
+                                                    <a href="https://replit1.tbg95.co/education/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fjiqtmr%7B%2Fmpvowt%3Dhn%3Dgn%24fe%3D3" role="menuitem" tabindex="-1" __uv-attr-href="/history/optout?hl=en&amp;fg=1">Search history</a>
                                                 </div>
                                             </g-menu-item>
-                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;CT0pQM">
+                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;Buj/3s">
                                                 <div jsname="ibnC6b" class="YpcDnf OSrXXb HG1dvd" role="none">
-                                                    <a href="https://support.google.com/websearch/?p=ws_results_help&amp;hl=en&amp;fg=1" role="menuitem" tabindex="-1">Search help</a>
+                                                    <a href="https://replit1.tbg95.co/education/hvtrs8%2F-swpropt%2Cgmoelg.aoo%2Fue%60sgapcj%2F%3Dp%3Fwq_pequntq_jenp%24hn%3Dgn%24fe%3D3" role="menuitem" tabindex="-1" __uv-attr-href="https://support.google.com/websearch/?p=ws_results_help&amp;hl=en&amp;fg=1">Search help</a>
                                                 </div>
                                             </g-menu-item>
-                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;CT0pQM">
+                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;Buj/3s">
                                                 <div jsname="ibnC6b" class="YpcDnf OSrXXb HG1dvd" role="none">
                                                     <span data-bucket="websearch" role="menuitem" tabindex="-1" jsaction="trigger.YcfJ">Send feedback</span>
                                                 </div>
                                             </g-menu-item>
-                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe LGiluc" aria-hidden="true" role="separator" data-short-label="" jsdata="zPXzie;_;CT0pQQ"></g-menu-item>
-                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;CT0pQM">
+                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe LGiluc" aria-hidden="true" role="separator" data-short-label="" jsdata="zPXzie;_;Buj/3w"></g-menu-item>
+                                            <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="EpPYLd GZnQqe" role="none" data-short-label="" jsdata="zPXzie;_;Buj/3s">
                                                 <div jsname="ibnC6b" class="YpcDnf OSrXXb HG1dvd" role="none">
                                                     <div class="y0fQ9c" data-spl="/setprefs?hl=en&amp;prev=https://www.google.com/?gws_rd%3Dssl%26pccc%3D1&amp;sig=0_vzKdJ_xyWjZIJwk2IdkP0enFO7s%3D&amp;cs=1" id="YUIDDb" role="menuitem" tabindex="-1">
                                                         <style>
@@ -5742,10 +5749,10 @@
                                                                 width: 20px
                                                             }
                                                         </style>
-                                                        <div jscontroller="fXO0xe" class="tFYjZe" data-bsdm="0" data-btf="0" data-hbc="#8ab4f8" data-htc="#202124" data-spt="1" data-tsdm="0" role="link" tabindex="0" jsaction="ok5gFc;x6BCfb:ggFCce;w3Ukrf:aelxJb" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQqsEHCBs">
+                                                        <div jscontroller="fXO0xe" class="tFYjZe" data-bsdm="0" data-btf="0" data-hbc="#8ab4f8" data-htc="#202124" data-spt="1" data-tsdm="0" role="link" tabindex="0" jsaction="ok5gFc;x6BCfb:ggFCce;w3Ukrf:aelxJb" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQqsEHCBs">
                                                             <div>Dark theme: On</div>
                                                             <div class="iOHNLb">
-                                                                <span style="height:20px;line-height:20px;width:20px" class="z1asCe tSAV7">
+                                                                <span style="height:20px;line-height:20px;width:20px" class="z1asCe tSAV7" __uv-attr-style="height:20px;line-height:20px;width:20px">
                                                                     <svg focusable="false" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
                                                                         <rect fill="none" height="24" width="24"></rect>
                                                                         <path d="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26 c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path>
@@ -5763,7 +5770,7 @@
                         </span>
                     </div>
                 </div>
-                <div jscontroller="GU4Gab" style="display:none" data-pcs="2" jsaction="rcuQ6b:npT2md"></div>
+                <div jscontroller="GU4Gab" style="display:none" data-pcs="2" jsaction="rcuQ6b:npT2md" __uv-attr-style="display:none"></div>
             </div>
         </div>
         <div class="Fgvgjc">
@@ -5782,11 +5789,11 @@
                     }
                 </style>
             </div>
-            <div jscontroller="ms4mZb" data-jiis="up" data-async-type="hpba" id="a3JU5b" class="yp" jsaction="rcuQ6b:npT2md" data-ved="0ahUKEwjY6bu_uP3-AhUAAjQIHZR3AFoQj-0KCBw"></div>
-            <span style="display:none">
-                <span jscontroller="DhPYme" style="display:none" data-mmcnt="100" jsaction="rcuQ6b:npT2md"></span>
+            <div jscontroller="ms4mZb" data-jiis="up" data-async-type="hpba" id="a3JU5b" class="yp" jsaction="rcuQ6b:npT2md" data-ved="0ahUKEwiZ873_wv3-AhWwIzQIHcq3D_YQj-0KCBw"></div>
+            <span style="display:none" __uv-attr-style="display:none">
+                <span jscontroller="DhPYme" style="display:none" data-mmcnt="100" jsaction="rcuQ6b:npT2md" __uv-attr-style="display:none"></span>
             </span>
-            <script nonce="ujbxpq0_uWtmjKLYgD9i0w">
+            <script __uv-attr-nonce="3edzqBw5hKPjY6DCoFBHBg">
                 this.gbar_ = this.gbar_ || {};
                 (function(_) {
                     var window = this;
@@ -5802,7 +5809,7 @@
                                     const e = a.s + c;
                                     a.s++;
                                     b.dataset.eqid = e;
-                                    a.B[e] = d;
+                                    a.B[__uv.$wrap((e))] = d;
                                     b && b.addEventListener ? b.addEventListener(c, d, !1) : b && b.attachEvent ? b.attachEvent("on" + c, d) : a.o.log(Error("v`" + b))
                                 }
                         }
@@ -5843,8 +5850,8 @@
                             if (a.o)
                                 return a.o;
                             for (const b in a.i)
-                                if (a.i[b].oa() && a.i[b].B())
-                                    return a.i[b];
+                                if (a.i[__uv.$wrap((b))].oa() && a.i[__uv.$wrap((b))].B())
+                                    return a.i[__uv.$wrap((b))];
                             return null
                         }
                         ;
@@ -5860,15 +5867,15 @@
                                 this.s = null
                             }
                             v(a) {
-                                this.i[a] && (_.mh(this) && _.mh(this).K() == a || this.i[a].P(!0))
+                                this.i[__uv.$wrap((a))] && (_.mh(this) && _.mh(this).K() == a || this.i[__uv.$wrap((a))].P(!0))
                             }
                             Ua(a) {
                                 this.s = a;
                                 for (const b in this.i)
-                                    this.i[b].oa() && this.i[b].Ua(a)
+                                    this.i[__uv.$wrap((b))].oa() && this.i[__uv.$wrap((b))].Ua(a)
                             }
                             tc(a) {
-                                return a in this.i ? this.i[a] : null
+                                return a in this.i ? this.i[__uv.$wrap((a))] : null
                             }
                         }
                         ;
@@ -5981,7 +5988,7 @@
                         ;
                         ve = 0;
                         _.we = function(a) {
-                            return Object.prototype.hasOwnProperty.call(a, _.ib) && a[_.ib] || (a[_.ib] = ++ve)
+                            return Object.prototype.hasOwnProperty.call(a, _.ib) && a[__uv.$wrap((_.ib))] || (a[__uv.$wrap((_.ib))] = ++ve)
                         }
                         ;
                         _.xe = function(a) {
@@ -6070,7 +6077,7 @@
                                     max: b,
                                     url: d.src
                                 });
-                                _.$d("HEAD")[0].appendChild(d)
+                                _.$d("HEAD")[__uv.$wrap((0))].appendChild(d)
                             }
                         }
                           , nj = class extends _.K {
@@ -6087,7 +6094,7 @@
                                 _.dj(a, rj, "stylesheet");
                                 let b = _.Xc();
                                 b && a.setAttribute("nonce", b);
-                                _.$d("HEAD")[0].appendChild(a)
+                                _.$d("HEAD")[__uv.$wrap((0))].appendChild(a)
                             }
                         };
                         (function() {
@@ -6116,14 +6123,14 @@
                 </div>
             </div>
         </div>
-        <textarea class="csi" name="csi" style="display:none"></textarea>
-        <script nonce="ujbxpq0_uWtmjKLYgD9i0w">
+        <textarea class="csi" name="csi" style="display:none" __uv-attr-style="display:none"></textarea>
+        <script __uv-attr-nonce="3edzqBw5hKPjY6DCoFBHBg">
             (function() {
                 (function() {
                     var d = Date.now()
                       , a = google.c.sxs ? "load2" : "load";
-                    if (google.timers && google.timers[a].t) {
-                        for (var b = document.getElementsByTagName("img"), e = 0, c = void 0; c = b[e++]; )
+                    if (google.timers && google.timers[__uv.$wrap((a))].t) {
+                        for (var b = document.getElementsByTagName("img"), e = 0, c = void 0; c = b[__uv.$wrap((e++))]; )
                             google.c.setup(c, !1, -1);
                         google.c.bofr = !1;
                         google.c.e(a, "imn", String(b.length));
@@ -6164,7 +6171,7 @@
             }
             )();
             (function() {
-                var pmc = '{\x22aa\x22:{},\x22abd\x22:{\x22abd\x22:false,\x22deb\x22:false,\x22det\x22:false},\x22async\x22:{},\x22cdos\x22:{\x22cdobsel\x22:false},\x22csi\x22:{},\x22d\x22:{},\x22dpf\x22:{},\x22gf\x22:{\x22pid\x22:196},\x22hsm\x22:{},\x22ifl\x22:{\x22lsf_is_launched\x22:true,\x22opts\x22:[{\x22href\x22:\x22/search?gws_rd\x3dssl\\u0026q\x3dConway\x27s+game+of+life\\u0026csf\x3db\x22,\x22id\x22:\x22curious\x22,\x22msg\x22:\x22I\x27m Feeling Curious\x22},{\x22href\x22:\x22/search?gws_rd\x3dssl\\u0026q\x3drestaurants+nearby\x22,\x22id\x22:\x22hungry\x22,\x22msg\x22:\x22I\x27m Feeling Hungry\x22},{\x22href\x22:\x22/search?gws_rd\x3dssl\\u0026q\x3dgoogle+random+number+generator\\u0026csf\x3db\x22,\x22id\x22:\x22adventurous\x22,\x22msg\x22:\x22I\x27m Feeling Adventurous\x22},{\x22href\x22:\x22/search?gws_rd\x3dssl\\u0026q\x3ddo+a+barrel+roll\\u0026csf\x3db\x22,\x22id\x22:\x22playful\x22,\x22msg\x22:\x22I\x27m Feeling Playful\x22},{\x22href\x22:\x22/url?url\x3dhttps://www.google.com/search?gws_rd%3Dssl%26q%3Dnebulae%26um%3D1%26ie%3DUTF-8%26tbm%3Disch%26csf%3Db\x22,\x22id\x22:\x22stellar\x22,\x22msg\x22:\x22I\x27m Feeling Stellar\x22},{\x22href\x22:\x22/url?url\x3d/doodles\x22,\x22id\x22:\x22doodley\x22,\x22msg\x22:\x22I\x27m Feeling Doodley\x22},{\x22href\x22:\x22/url?url\x3dhttps://trends.google.com/hottrends\\u0026sa\x3dt\\u0026usg\x3dAOvVaw0hXgzDMTx66unZaN8ANJHA\x22,\x22id\x22:\x22trendy\x22,\x22msg\x22:\x22I\x27m Feeling Trendy\x22},{\x22href\x22:\x22/url?url\x3dhttps://artsandculture.google.com/asset/mwFGGdzKbfGMkg\\u0026sa\x3dt\\u0026usg\x3dAOvVaw1Y3jt8dys_B6FXzDDPRvOW\x22,\x22id\x22:\x22artistic\x22,\x22msg\x22:\x22I\x27m Feeling Artistic\x22},{\x22href\x22:\x22/search?gws_rd\x3dssl\\u0026q\x3dfriends+joey\\u0026csf\x3db\x22,\x22id\x22:\x22funny\x22,\x22msg\x22:\x22I\x27m Feeling Funny\x22}]},\x22jsa\x22:{\x22csi\x22:true,\x22csir\x22:100},\x22mu\x22:{\x22murl\x22:\x22https://adservice.google.com/adsid/google/ui\x22},\x22pHXghd\x22:{},\x22sb_wiz\x22:{\x22rfs\x22:[],\x22scq\x22:\x22\x22,\x22stok\x22:\x22PRpzW9HxcF0pRvQBNUFGaN3QbQo\x22},\x22sf\x22:{},\x22sonic\x22:{},\x22spch\x22:{\x22ae\x22:\x22Please check your microphone.  \\u003Ca href\x3d\\\x22https://support.google.com/chrome/?p\x3dui_voice_search\\\x22 target\x3d\\\x22_blank\\\x22\\u003ELearn more\\u003C/a\\u003E\x22,\x22fp\x22:true,\x22hl\x22:\x22en-US\x22,\x22im\x22:\x22Click \\u003Cb\\u003EAllow\\u003C/b\\u003E to start voice search\x22,\x22iw\x22:\x22Waiting...\x22,\x22lm\x22:\x22Listening...\x22,\x22lu\x22:\x22%1$s voice search not available\x22,\x22mb\x22:false,\x22ne\x22:\x22No Internet connection\x22,\x22nt\x22:\x22Didn\x27t get that. \\u003Cspan\\u003ETry again\\u003C/span\\u003E\x22,\x22nv\x22:\x22Please check your microphone and audio levels.  \\u003Ca href\x3d\\\x22https://support.google.com/chrome/?p\x3dui_voice_search\\\x22 target\x3d\\\x22_blank\\\x22\\u003ELearn more\\u003C/a\\u003E\x22,\x22pe\x22:\x22Voice search has been turned off.  \\u003Ca href\x3d\\\x22https://support.google.com/chrome/?p\x3dui_voice_search\\\x22 target\x3d\\\x22_blank\\\x22\\u003EDetails\\u003C/a\\u003E\x22,\x22rm\x22:\x22Speak now\x22}}';
+                var pmc = '{\x22aa\x22:{},\x22abd\x22:{\x22abd\x22:false,\x22deb\x22:false,\x22det\x22:false},\x22async\x22:{},\x22cdos\x22:{\x22cdobsel\x22:false},\x22csi\x22:{},\x22d\x22:{},\x22dpf\x22:{},\x22gf\x22:{\x22pid\x22:196},\x22hsm\x22:{},\x22ifl\x22:{\x22lsf_is_launched\x22:true,\x22opts\x22:[{\x22href\x22:\x22/search?gws_rd\x3dssl\\u0026q\x3dkerning\\u0026csf\x3db\x22,\x22id\x22:\x22curious\x22,\x22msg\x22:\x22I\x27m Feeling Curious\x22},{\x22href\x22:\x22/search?gws_rd\x3dssl\\u0026q\x3drestaurants+nearby\x22,\x22id\x22:\x22hungry\x22,\x22msg\x22:\x22I\x27m Feeling Hungry\x22},{\x22href\x22:\x22/search?gws_rd\x3dssl\\u0026q\x3dbat+signal\\u0026csf\x3db\x22,\x22id\x22:\x22adventurous\x22,\x22msg\x22:\x22I\x27m Feeling Adventurous\x22},{\x22href\x22:\x22/search?gws_rd\x3dssl\\u0026q\x3dblink+hmtl\\u0026csf\x3db\x22,\x22id\x22:\x22playful\x22,\x22msg\x22:\x22I\x27m Feeling Playful\x22},{\x22href\x22:\x22/url?url\x3dhttps://www.google.com/search?gws_rd%3Dssl%26q%3Dorion%2Bnebula%26um%3D1%26ie%3DUTF-8%26tbm%3Disch%26csf%3Db\x22,\x22id\x22:\x22stellar\x22,\x22msg\x22:\x22I\x27m Feeling Stellar\x22},{\x22href\x22:\x22/url?url\x3d/doodles\x22,\x22id\x22:\x22doodley\x22,\x22msg\x22:\x22I\x27m Feeling Doodley\x22},{\x22href\x22:\x22/url?url\x3dhttps://trends.google.com/hottrends\\u0026sa\x3dt\\u0026usg\x3dAOvVaw0hXgzDMTx66unZaN8ANJHA\x22,\x22id\x22:\x22trendy\x22,\x22msg\x22:\x22I\x27m Feeling Trendy\x22},{\x22href\x22:\x22/url?url\x3dhttps://artsandculture.google.com/partner/musee-de-lorangerie\\u0026sa\x3dt\\u0026usg\x3dAOvVaw3qy6PDEO8_tC9QBLYaFGFZ\x22,\x22id\x22:\x22artistic\x22,\x22msg\x22:\x22I\x27m Feeling Artistic\x22},{\x22href\x22:\x22/url?url\x3dhttps://www.google.com/search?gws_rd%3Dssl%26q%3Dfunny%2Bcat%2Bmemes%26um%3D1%26ie%3DUTF-8%26tbm%3Disch%26csf%3Db\x22,\x22id\x22:\x22funny\x22,\x22msg\x22:\x22I\x27m Feeling Funny\x22}]},\x22jsa\x22:{\x22csi\x22:true,\x22csir\x22:100},\x22mu\x22:{\x22murl\x22:\x22https://adservice.google.com/adsid/google/ui\x22},\x22pHXghd\x22:{},\x22sb_wiz\x22:{\x22rfs\x22:[],\x22scq\x22:\x22\x22,\x22stok\x22:\x22hHkWwKI0PTyX3zXxMx_zV2FFkt0\x22},\x22sf\x22:{},\x22sonic\x22:{},\x22spch\x22:{\x22ae\x22:\x22Please check your microphone.  \\u003Ca href\x3d\\\x22https://support.google.com/chrome/?p\x3dui_voice_search\\\x22 target\x3d\\\x22_blank\\\x22\\u003ELearn more\\u003C/a\\u003E\x22,\x22fp\x22:true,\x22hl\x22:\x22en-US\x22,\x22im\x22:\x22Click \\u003Cb\\u003EAllow\\u003C/b\\u003E to start voice search\x22,\x22iw\x22:\x22Waiting...\x22,\x22lm\x22:\x22Listening...\x22,\x22lu\x22:\x22%1$s voice search not available\x22,\x22mb\x22:false,\x22ne\x22:\x22No Internet connection\x22,\x22nt\x22:\x22Didn\x27t get that. \\u003Cspan\\u003ETry again\\u003C/span\\u003E\x22,\x22nv\x22:\x22Please check your microphone and audio levels.  \\u003Ca href\x3d\\\x22https://support.google.com/chrome/?p\x3dui_voice_search\\\x22 target\x3d\\\x22_blank\\\x22\\u003ELearn more\\u003C/a\\u003E\x22,\x22pe\x22:\x22Voice search has been turned off.  \\u003Ca href\x3d\\\x22https://support.google.com/chrome/?p\x3dui_voice_search\\\x22 target\x3d\\\x22_blank\\\x22\\u003EDetails\\u003C/a\\u003E\x22,\x22rm\x22:\x22Speak now\x22}}';
                 google.pmc = JSON.parse(pmc);
             }
             )();
@@ -6174,29 +6181,29 @@
             }
             )();
             (function() {
-                var m = ['CT0pQE', '[\x22gws-wiz\x22,\x22\x22,\x22\x22,\x22\x22,null,1,0,0,11,\x22en\x22,\x22PRpzW9HxcF0pRvQBNUFGaN3QbQo\x22,\x22\x22,\x22fFplZNi7AYCE0PEPlO-B0AU\x22,0,\x22en\x22,null,null,null,3,5,0,-1,null,\x22\x22,-1,0,null,null,1,null,null,null,0,1800000,1,0,null,8,6,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.15,1,null,null,null,1,null,0,null,null,null,null,null,null,null,null,null,0,1,1,0,null,null,0,null,null,null,null,0,null,null,null,null,null,null,null,0,null,1,1,0,null,\x22\x22,0,1,0,-1,null,null,null,0,0,null,null,null,null,null,null,null,null,null,0,0,0,0,\x22futura_sug_zp_si_0000000_e\x22,null,null,null,null,\x22\x22,1,null,null,-1,-1,null,null,0,0]', 'CT0pQI', '[3,6,null,null,1,1,0,0,0,0,0,0]', 'CT0pQM', '[\x22\x22,6,0]', 'CT0pQQ', '[\x22\x22,4,0]'];
+                var m = ['Buj/3k', '[\x22gws-wiz\x22,\x22\x22,\x22\x22,\x22\x22,null,1,0,0,11,\x22en\x22,\x22hHkWwKI0PTyX3zXxMx_zV2FFkt0\x22,\x22\x22,\x22fmVlZJm8JrDH0PEPyu--sA8\x22,0,\x22en\x22,null,null,null,3,5,0,-1,null,\x22\x22,-1,0,null,null,1,null,null,null,0,1800000,1,0,null,8,6,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.15,1,null,null,null,1,null,0,null,null,null,null,null,null,null,null,null,0,1,1,0,null,null,0,null,null,null,null,0,null,null,null,null,null,null,null,0,null,1,1,0,null,\x22\x22,0,1,0,-1,null,null,null,0,0,null,null,null,null,null,null,null,null,null,0,0,0,0,\x22futura_sug_zp_si_0000000_e\x22,null,null,null,null,\x22\x22,1,null,null,-1,-1,null,null,0,0]', 'Buj/3o', '[3,6,null,null,1,1,0,0,0,0,0,0]', 'Buj/3s', '[\x22\x22,6,0]', 'Buj/3w', '[\x22\x22,4,0]'];
                 var a = m;
                 window.W_jd = window.W_jd || {};
                 for (var b = 0; b < a.length; b += 2)
-                    window.W_jd[a[b]] = JSON.parse(a[b + 1]);
+                    window.W_jd[__uv.$wrap((a[__uv.$wrap((b))]))] = JSON.parse(a[__uv.$wrap((b + 1))]);
             }
             )();
             (function() {
                 window.WIZ_global_data = {
                     "S6lZl": "89978449",
-                    "QrtxK": "0",
-                    "zChJod": "%.@.]",
-                    "LVIXXb": "1",
-                    "eptZe": "/wizrpcui/_/WizRpcUi/",
-                    "S06Grb": "",
-                    "Yllh3e": "%.@.1684363900024024,137626112,1509980052]",
                     "GWsdKe": "en-US",
-                    "SNlM0e": "",
-                    "w2btAe": "%.@.\"\",\"\",\"0\",null,null,null,1]",
+                    "eptZe": "/wizrpcui/_/WizRpcUi/",
                     "oxN3nb": {
                         "1": false
                     },
-                    "Im6cmf": "/wizrpcui/_/WizRpcUi"
+                    "zChJod": "%.@.]",
+                    "S06Grb": "",
+                    "QrtxK": "0",
+                    "Im6cmf": "/wizrpcui/_/WizRpcUi",
+                    "w2btAe": "%.@.\"\",\"\",\"0\",null,null,null,1]",
+                    "Yllh3e": "%.@.1684366718630297,137634736,4128225226]",
+                    "SNlM0e": "",
+                    "LVIXXb": "1"
                 };
                 window.IJ_values = {
                     "eG8Zqf": 1.0,
@@ -6507,7 +6514,7 @@
                     "w2btAe": "%.@.\"\",\"\",\"0\",null,null,null,1]",
                     "pxO4Zd": "0",
                     "mXOY5d": "%.@.null,1,1,null,[null,757,1440]]",
-                    "SsQ4x": "ujbxpq0_uWtmjKLYgD9i0w",
+                    "SsQ4x": "3edzqBw5hKPjY6DCoFBHBg",
                     "IYFWl": "%.@.\"#424548\"]",
                     "Ht1O2b": "%.@.0]",
                     "d6J1ld": "%.@.0]",
@@ -6575,7 +6582,7 @@
                         if (a.hasOwnProperty(b)) {
                             var c = document.getElementById(b) || document.documentElement.querySelector('img[data-iid="' + b + '"]');
                             c && Number(c.getAttribute("data-atf")) & 1 && (c.setAttribute("data-deferred", "2"),
-                            c.src = a[b])
+                            c.src = a[__uv.$wrap((b))])
                         }
                     ;
                 }
@@ -6588,7 +6595,7 @@
                     return function() {
                         return c < a.length ? {
                             done: !1,
-                            value: a[c++]
+                            value: a[__uv.$wrap((c++))]
                         } : {
                             done: !0
                         }
@@ -6598,14 +6605,14 @@
                 var g, h;
                 a: {
                     for (var k = ["CLOSURE_FLAGS"], l = e, n = 0; n < k.length; n++)
-                        if (l = l[k[n]],
+                        if (l = l[__uv.$wrap((k[__uv.$wrap((n))]))],
                         null == l) {
                             h = null;
                             break a
                         }
                     h = l
                 }
-                var p = h && h[610401301];
+                var p = h && h[__uv.$wrap((610401301))];
                 g = null != p ? p : !1;
                 var q, r = e.navigator;
                 q = r ? r.userAgentData || null : null;
@@ -6661,7 +6668,7 @@
                       , H = f.concat
                       , d = E;
                     if (!(d instanceof Array)) {
-                        var m = "undefined" != typeof Symbol && Symbol.iterator && d[Symbol.iterator];
+                        var m = "undefined" != typeof Symbol && Symbol.iterator && d[__uv.$wrap((Symbol.iterator))];
                         if (m)
                             d = m.call(d);
                         else if ("number" == typeof d.length)
@@ -6678,7 +6685,7 @@
                     if (a && a instanceof HTMLElement)
                         if (a === F) {
                             if (c = 4 <= E.length)
-                                c = 5 > (E[E.length - 1] - E[E.length - 4]) / 1E3;
+                                c = 5 > (E[__uv.$wrap((E.length - 1))] - E[__uv.$wrap((E.length - 4))]) / 1E3;
                             if (c) {
                                 c = google.getEI(a);
                                 a.hasAttribute("data-ved") ? f = a ? D(a) || "" : "" : f = (f = a.closest("[data-ved]")) ? D(f) || "" : "";
@@ -6718,15 +6725,15 @@
                           , d = 0 < h ? a.substring(0, h) : ""
                           , k = document.createElement("div");
                         k.innerHTML = b;
-                        var e = k.children[0];
+                        var e = k.children[__uv.$wrap((0))];
                         if (e && (c.tag = e.tagName,
-                        c["class"] = String(e.className || null),
+                        c[__uv.$wrap(("class"))] = String(e.className || null),
                         c.name = String(e.getAttribute("jsname")),
                         d)) {
                             a = [];
                             var l = document.querySelectorAll('[id^="' + d + '_"]');
                             for (b = 0; b < l.length; ++b)
-                                a.push(l[b].id);
+                                a.push(l[__uv.$wrap((b))].id);
                             c.ids = a.join(",")
                         }
                         google.ml(Error(d ? "Missing ID with prefix " + d : "Missing ID"), !1, c)
@@ -6747,7 +6754,7 @@
                 (function() {
                     (function() {
                         google.csct = {};
-                        google.csct.ps = 'AOvVaw3CqfgsMJb2cfXeJpzjgGE0\x26ust\x3d1684450300070788';
+                        google.csct.ps = 'AOvVaw0_8NnwjJxrnPIUUAa5dYAH\x26ust\x3d1684453118669689';
                     }
                     )();
                 }
@@ -6805,3 +6812,4 @@
         </script>
     </body>
 </html>
+
